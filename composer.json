@@ -1,0 +1,17 @@
+{
+  "name": "getrootid/radicati_install_profile",
+  "description": "Base install profile for Drupal 10 sites using the Radicati theme",
+  "type": "drupal-profile",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Jason Mickela",
+      "email": "jason@rootid.com"
+    },
+    {
+      "name": "Meg Claypool",
+      "email": "meg@rootid.com"
+    }
+  ],
+  "require": {}
+}
