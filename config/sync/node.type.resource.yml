@@ -1,0 +1,26 @@
+uuid: 8fa66a99-bc08-40cd-b230-09589427626c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_tray:
+    type_category: resources
+    type_thumbnail: ''
+    type_icon: /themes/contrib/radicati_drupal_theme/dist/theme-icons/lightbulb-gear-duotone.svg
+    type_description: ''
+    existing_nodes_link_text: 'All Resources'
+    type_weight: 0
+name: Resource
+type: resource
+description: 'Displays in the resource library. This can be a document or a link to a resource somewhere else.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,8 @@
+uuid: c5a193b3-849a-49aa-95db-19e88022b345
+langcode: en
+status: true
+dependencies: {  }
+id: content_grid
+label: 'Content Grid'
+revision: 0
+description: 'Allows editors to place existing content in a grid and select what kind of display to use for the content items.'

@@ -1,0 +1,19 @@
+uuid: 9f3a3f4b-04a9-47a4-ac47-5d851ee4c267
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic_hero
+    - field.storage.block_content.field_basic_hero_title
+id: block_content.basic_hero.field_basic_hero_title
+field_name: field_basic_hero_title
+entity_type: block_content
+bundle: basic_hero
+label: Title
+description: "Used as the H1 tag for the page. Should normally match the node title, but doesn't have to."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

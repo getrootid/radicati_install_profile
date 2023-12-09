@@ -1,0 +1,11 @@
+uuid: 22f6378e-e0ef-4083-a819-8c972cb96c05
+langcode: en
+status: true
+dependencies: {  }
+id: listing_section
+block_id: 'inline_block:listing_section'
+category: search_listing
+label: 'Listing Section'
+image_path: ''
+image_alt: ''
+weight: -100

@@ -1,0 +1,14 @@
+uuid: 95c1865f-3248-4e81-87ad-a64d3647ee00
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.temp
+id: paragraph.temp.default
+targetEntityType: paragraph
+bundle: temp
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true

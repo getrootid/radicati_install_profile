@@ -1,0 +1,54 @@
+uuid: c84e53cf-b586-4f0a-8655-0b7ba47c67d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.field_featured_image
+    - field.field.node.event.field_summary
+    - node.type.event
+  module:
+    - layout_builder
+    - manage_display
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  field_featured_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_summary:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  search_api_excerpt: true
+  uid: true

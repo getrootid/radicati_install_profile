@@ -1,0 +1,85 @@
+uuid: 2a140c1b-5060-41e3-b96b-7c9091dfceb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resource_categories
+    - field.storage.node.field_resource_type
+    - field.storage.node.field_summary
+    - field.storage.node.field_tags
+    - search_api.server.database_search_server
+    - core.entity_view_mode.node.search_index
+  module:
+    - search_api
+    - node
+id: resource_library
+name: 'Resource Library'
+description: ''
+read_only: false
+field_settings:
+  field_resource_categories:
+    label: 'Resource Categories'
+    datasource_id: 'entity:node'
+    property_path: field_resource_categories
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_resource_categories
+  field_resource_type:
+    label: 'Resource Type'
+    datasource_id: 'entity:node'
+    property_path: field_resource_type
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_resource_type
+  field_summary:
+    label: Summary
+    datasource_id: 'entity:node'
+    property_path: field_summary
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_summary
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          resource: search_index
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - resource
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: database_search_server

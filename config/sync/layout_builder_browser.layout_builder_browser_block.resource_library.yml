@@ -1,0 +1,11 @@
+uuid: 00213eef-9907-4fea-b733-a996fdaf683e
+langcode: en
+status: true
+dependencies: {  }
+id: resource_library
+block_id: 'inline_block:resource_library'
+category: search_listing
+label: 'Resource Library'
+image_path: ''
+image_alt: ''
+weight: -100

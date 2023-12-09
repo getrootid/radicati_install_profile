@@ -1,0 +1,86 @@
+uuid: f952012d-a8e6-40cc-a1bb-b77b6a531f17
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.highlight
+    - field.field.block_content.highlight.field_highlight_blurb
+    - field.field.block_content.highlight.field_highlight_button
+    - field.field.block_content.highlight.field_highlight_media
+    - field.field.block_content.highlight.field_highlight_title
+    - field.field.block_content.highlight.field_setting_alignment
+    - field.field.block_content.highlight.field_setting_background
+    - field.field.block_content.highlight.field_setting_layout
+  module:
+    - link
+    - radicati_base
+    - text
+    - text_field_formatter
+id: block_content.highlight.default
+targetEntityType: block_content
+bundle: highlight
+mode: default
+content:
+  field_highlight_blurb:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_highlight_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_highlight_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: 16_9_half_width
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_highlight_title:
+    type: text_field_formatter
+    label: hidden
+    settings:
+      wrap_tag: h2
+      wrap_class: ''
+      wrap_attributes: ''
+      override_link_label: ''
+      link_to_entity: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_setting_alignment:
+    type: rad_tax_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_setting_background:
+    type: rad_tax_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_setting_layout:
+    type: rad_tax_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+hidden:
+  search_api_excerpt: true

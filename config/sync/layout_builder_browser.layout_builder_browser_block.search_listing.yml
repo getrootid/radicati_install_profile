@@ -1,0 +1,11 @@
+uuid: bd923757-052b-4628-903e-88288b190dfd
+langcode: en
+status: true
+dependencies: {  }
+id: search_listing
+block_id: 'inline_block:search_listing'
+category: search_listing
+label: 'Search Listing'
+image_path: ''
+image_alt: ''
+weight: -100

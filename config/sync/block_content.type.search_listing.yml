@@ -1,0 +1,8 @@
+uuid: 2fd91635-aa41-4810-ba6f-04b67bfa99ed
+langcode: en
+status: true
+dependencies: {  }
+id: search_listing
+label: 'Search Listing'
+revision: 0
+description: 'The listing page for a search interface. Most sites will only use this once, but it can be used multiple times.'

@@ -1,0 +1,95 @@
+uuid: 837bf8e5-73c4-4da7-ba4b-107fb07e1a39
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.media.16_9_full_width
+    - core.entity_view_mode.media.16_9_half_width
+    - core.entity_view_mode.media.1_1_full_width
+    - core.entity_view_mode.media.1_1_half_width
+    - core.entity_view_mode.media.4_3_full_width
+    - core.entity_view_mode.media.4_3_half_width
+  module:
+    - blazy
+    - media
+    - slick
+name: CK5
+format: ck5
+weight: 0
+filters:
+  blazy_filter:
+    id: blazy_filter
+    provider: blazy
+    status: false
+    weight: 3
+    settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_media_style: ''
+      box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
+      use_data_uri: '0'
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: 16_9_half_width
+      allowed_view_modes:
+        16_9_full_width: 16_9_full_width
+        16_9_half_width: 16_9_half_width
+        1_1_full_width: 1_1_full_width
+        1_1_half_width: 1_1_half_width
+        4_3_full_width: 4_3_full_width
+        4_3_half_width: 4_3_half_width
+      allowed_media_types:
+        image: image
+        remote_video: remote_video
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      optionset: default
+      layout: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      skin: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      preserve_keys: false
+      visible_items: null

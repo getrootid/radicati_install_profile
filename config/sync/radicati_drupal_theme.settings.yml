@@ -1,0 +1,17 @@
+radicati_theme_footer_type: single
+radicati_theme_header_type: multi
+radicati_theme_header_sticky: 0
+radicati_theme_footer_sticky: 1
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+header_type: multi
+sticky_header: 1
+footer_type: single
+sticky_footer: 0

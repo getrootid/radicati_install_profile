@@ -1,0 +1,22 @@
+uuid: 1e3f88cf-6284-4178-8183-6b7f769eb03a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - radicati_drupal_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: radicati_drupal_theme_breadcrumbs
+theme: radicati_drupal_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

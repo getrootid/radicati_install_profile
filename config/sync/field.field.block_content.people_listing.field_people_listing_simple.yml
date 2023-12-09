@@ -1,0 +1,29 @@
+uuid: 88610ab7-4bbd-422b-8169-8d2272afd06a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people_listing
+    - field.storage.block_content.field_people_listing_simple
+    - node.type.person
+id: block_content.people_listing.field_people_listing_simple
+field_name: field_people_listing_simple
+entity_type: block_content
+bundle: people_listing
+label: 'Simple Listing'
+description: 'This section is meant for primarily listing names and positions. It is often displayed as a grid or in multiple columns.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

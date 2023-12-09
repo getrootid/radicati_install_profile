@@ -1,0 +1,26 @@
+uuid: 32ad2bbe-e373-4bf5-8f2e-8c8d90584f02
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_tray:
+    type_category: news_alerts
+    type_thumbnail: ''
+    type_icon: /themes/contrib/radicati_drupal_theme/dist/theme-icons/newspaper-duotone.svg
+    type_description: ''
+    existing_nodes_link_text: 'All News'
+    type_weight: 5
+name: 'News Item'
+type: news_item
+description: "News about your organization. Keep people up to date on what you've been doing!"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

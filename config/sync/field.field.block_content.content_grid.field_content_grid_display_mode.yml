@@ -1,0 +1,29 @@
+uuid: 645ffdb3-616e-47f4-9c77-0cf3e28ba3f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_grid
+    - field.storage.block_content.field_content_grid_display_mode
+  module:
+    - entity_reference_display
+id: block_content.content_grid.field_content_grid_display_mode
+field_name: field_content_grid_display_mode
+entity_type: block_content
+bundle: content_grid
+label: 'Display Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: card_vertical
+default_value_callback: ''
+settings:
+  exclude:
+    card_highlight: card_highlight
+    card_horizontal: card_horizontal
+    card_image_background: card_image_background
+    card_vertical: card_vertical
+  negate: 1
+field_type: entity_reference_display

@@ -1,0 +1,25 @@
+uuid: c79af2bf-f18f-4d39-9218-727b8593207a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_person_full_name
+    - node.type.person
+  module:
+    - field_token_value
+id: node.person.field_person_full_name
+field_name: field_person_full_name
+entity_type: node
+bundle: person
+label: 'Full Name'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '[node:field_person_first_name] [node:field_person_last_name] [node:field_person_pronouns]'
+default_value_callback: ''
+settings:
+  field_value: "[node:field_person_first_name] [node:field_person_last_name] <span class='pronouns'>[node:field_person_pronouns]</span>"
+  remove_empty: 1
+field_type: field_token_value

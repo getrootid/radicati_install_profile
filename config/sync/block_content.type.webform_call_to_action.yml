@@ -1,0 +1,8 @@
+uuid: e65e8eea-54c9-445b-b334-1535432a2ba3
+langcode: en
+status: true
+dependencies: {  }
+id: webform_call_to_action
+label: 'Webform Call to Action'
+revision: 0
+description: 'A simple Call to Action that includes a space for a webform. Normally used for a newsletter signup.'

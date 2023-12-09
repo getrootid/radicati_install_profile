@@ -1,0 +1,16 @@
+uuid: fe058940-b3a5-475a-a72f-b533e5bad5e5
+langcode: en
+status: true
+dependencies: {  }
+name: scaled_200
+label: 'Scaled 200'
+effects:
+  8b39d218-c348-4f8a-8278-61250955f9f2:
+    uuid: 8b39d218-c348-4f8a-8278-61250955f9f2
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: null
+      upscale: false
+pipeline: optimize_image

@@ -1,0 +1,15 @@
+uuid: 1cb1947b-add8-45da-a6ce-a7e637f43803
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: database_search_server
+name: 'Database Search Server'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words
+  phrase: disabled

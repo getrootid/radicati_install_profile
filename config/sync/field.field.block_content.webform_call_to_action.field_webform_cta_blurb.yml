@@ -1,0 +1,21 @@
+uuid: 3ecdcd4a-ea22-44ac-83af-1769efb1a974
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform_call_to_action
+    - field.storage.block_content.field_webform_cta_blurb
+  module:
+    - text
+id: block_content.webform_call_to_action.field_webform_cta_blurb
+field_name: field_webform_cta_blurb
+entity_type: block_content
+bundle: webform_call_to_action
+label: Blurb
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

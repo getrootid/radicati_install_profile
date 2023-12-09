@@ -1,0 +1,29 @@
+uuid: 704b7b1d-d68d-47e3-83d2-4c8dba3b5c72
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.scaled_1000
+    - image.style.scaled_1400
+    - image.style.scaled_1800
+    - image.style.scaled_200
+    - image.style.scaled_400
+    - image.style.scaled_600
+id: scaled_25_width
+label: 'Scaled 25% Width'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:768px) 25vw, 100vw'
+      sizes_image_styles:
+        - scaled_1000
+        - scaled_1400
+        - scaled_1800
+        - scaled_200
+        - scaled_400
+        - scaled_600
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: scaled_200

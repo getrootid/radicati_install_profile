@@ -1,0 +1,16 @@
+uuid: 092796cb-b8ad-4480-8214-3bf0546355d3
+langcode: en
+status: true
+dependencies: {  }
+name: scaled_1000
+label: 'Scaled 1000'
+effects:
+  2b100aaa-4fe5-45b6-85df-cab5c5df457f:
+    uuid: 2b100aaa-4fe5-45b6-85df-cab5c5df457f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1000
+      height: null
+      upscale: false
+pipeline: optimize_image

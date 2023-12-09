@@ -1,0 +1,10 @@
+uuid: 0cd8c35b-0358-425c-9357-f0e84b80b8b2
+langcode: en
+status: true
+dependencies: {  }
+id: logo_grid_item
+label: 'Logo Grid Item'
+icon_uuid: null
+icon_default: null
+description: 'A individual item meant to be part of a logo grid.'
+behavior_plugins: {  }

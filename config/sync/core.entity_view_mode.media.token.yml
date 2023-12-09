@@ -1,0 +1,10 @@
+uuid: fda11088-795a-4847-ba85-6e602ba63f1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.token
+label: Token
+targetEntityType: media
+cache: true

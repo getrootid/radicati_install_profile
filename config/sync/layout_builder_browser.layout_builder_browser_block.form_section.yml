@@ -1,0 +1,11 @@
+uuid: 57fe502d-0432-44a6-9b47-5ec4fe582ca6
+langcode: en
+status: true
+dependencies: {  }
+id: form_section
+block_id: 'inline_block:form_section'
+category: forms
+label: 'Form Section'
+image_path: ''
+image_alt: ''
+weight: -100

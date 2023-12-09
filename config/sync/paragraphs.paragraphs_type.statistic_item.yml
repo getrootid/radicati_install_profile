@@ -1,0 +1,10 @@
+uuid: c4811fac-5059-4d34-bdd8-d993af4b76f7
+langcode: en
+status: true
+dependencies: {  }
+id: statistic_item
+label: 'Statistic Item'
+icon_uuid: null
+icon_default: null
+description: 'Used in the icon/stats grid component.'
+behavior_plugins: {  }

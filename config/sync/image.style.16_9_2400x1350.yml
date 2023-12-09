@@ -1,0 +1,20 @@
+uuid: 660ba150-005e-4f2e-b6dc-c6586fdf8849
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: nXg2iWoKUi_jcO7MIzdQPB4jM0_8LLm9vV5fJLi95vo
+name: 16_9_2400x1350
+label: '16:9 2400x1350'
+effects:
+  a421fd3d-0dac-4fdf-9297-e812d5e454b1:
+    uuid: a421fd3d-0dac-4fdf-9297-e812d5e454b1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2400
+      height: 1350
+      crop_type: focal_point
+pipeline: optimize_image

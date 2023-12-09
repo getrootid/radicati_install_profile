@@ -1,0 +1,31 @@
+uuid: 9ecd87ff-f8a1-4331-9828-ab4d8bbf088d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logo_item_logo
+    - media.type.icon
+    - media.type.image
+    - paragraphs.paragraphs_type.logo_grid_item
+id: paragraph.logo_grid_item.field_logo_item_logo
+field_name: field_logo_item_logo
+entity_type: paragraph
+bundle: logo_grid_item
+label: Logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      icon: icon
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: icon
+field_type: entity_reference

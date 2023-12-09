@@ -1,0 +1,26 @@
+uuid: 02e6e535-edda-4c55-81cc-9930c3b82295
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_tray:
+    type_category: news_alerts
+    type_thumbnail: ''
+    type_icon: /themes/contrib/radicati_drupal_theme/dist/theme-icons/thumbtack-sharp-solid.svg
+    type_description: ''
+    existing_nodes_link_text: 'View Posts'
+    type_weight: 0
+name: Post
+type: post
+description: 'Timely content. This can be a blog post, or any other type of page that is meant to be displayed chronologically.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

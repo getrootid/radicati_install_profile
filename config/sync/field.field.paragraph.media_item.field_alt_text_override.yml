@@ -1,0 +1,19 @@
+uuid: ce200a36-39f1-4d49-a5ab-07e5f1897171
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alt_text_override
+    - paragraphs.paragraphs_type.media_item
+id: paragraph.media_item.field_alt_text_override
+field_name: field_alt_text_override
+entity_type: paragraph
+bundle: media_item
+label: 'Alt Text Override'
+description: 'If this is filled in it will override the default alt-text. This is useful if an image would be described differently based on the context in which it is used.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

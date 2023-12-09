@@ -1,0 +1,8 @@
+uuid: 19dad388-f9a7-4c94-9faf-e50ee431320e
+langcode: en
+status: true
+dependencies: {  }
+id: icon_stat_grid
+label: 'Icon Stat Grid'
+revision: 0
+description: 'Grid of icons with statistics. Typically a set of labels and values.'

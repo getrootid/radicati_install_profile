@@ -1,0 +1,23 @@
+uuid: 1d9a8557-66e4-4fc4-8efb-7327c5c9991c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.highlight
+    - field.storage.block_content.field_highlight_button
+  module:
+    - link
+id: block_content.highlight.field_highlight_button
+field_name: field_highlight_button
+entity_type: block_content
+bundle: highlight
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

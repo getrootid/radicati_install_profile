@@ -1,0 +1,10 @@
+uuid: a84fcac7-270c-4483-9e80-c7cb4615a20a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.resource_library_listing_item
+label: 'Resource Library Listing Item'
+targetEntityType: node
+cache: true

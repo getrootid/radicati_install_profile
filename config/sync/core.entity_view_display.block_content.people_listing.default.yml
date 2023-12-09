@@ -1,0 +1,64 @@
+uuid: bf5f8b22-aa3a-45e6-90e0-8500a33b8eb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people_listing
+    - field.field.block_content.people_listing.field_component_sub_title
+    - field.field.block_content.people_listing.field_component_title
+    - field.field.block_content.people_listing.field_people_listing_details
+    - field.field.block_content.people_listing.field_people_listing_simple
+    - field.field.block_content.people_listing.field_setting_alignment
+  module:
+    - manage_display
+    - radicati_base
+id: block_content.people_listing.default
+targetEntityType: block_content
+bundle: people_listing
+mode: default
+content:
+  field_component_sub_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h3
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_component_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_people_listing_details:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: detailed_listing
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_people_listing_simple:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: simple_listing
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_setting_alignment:
+    type: rad_tax_setting
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,25 @@
+uuid: a7093a29-4cc7-4afc-a4e3-c971bac03059
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_grid
+    - field.storage.block_content.field_setting_items_per_row
+id: block_content.content_grid.field_setting_items_per_row
+field_name: field_setting_items_per_row
+entity_type: block_content
+bundle: content_grid
+label: 'Items Per Row'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_5
+      arguments: {  }
+field_type: entity_reference

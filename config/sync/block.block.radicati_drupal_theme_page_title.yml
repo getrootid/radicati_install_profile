@@ -1,0 +1,20 @@
+uuid: 61d165da-046b-4b5e-86e9-ce22934f6eb9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - radicati_drupal_theme
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: radicati_drupal_theme_page_title
+theme: radicati_drupal_theme
+region: page_title
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

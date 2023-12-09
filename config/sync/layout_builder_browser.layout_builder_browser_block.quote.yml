@@ -1,0 +1,11 @@
+uuid: 71ddc49d-c794-4865-8fe9-33cb37256723
+langcode: en
+status: true
+dependencies: {  }
+id: quote
+block_id: 'inline_block:quote'
+category: page_content
+label: Quote
+image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/comment-quote-duotone.svg
+image_alt: Quote
+weight: -98

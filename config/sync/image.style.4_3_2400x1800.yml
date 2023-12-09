@@ -1,0 +1,20 @@
+uuid: 100fb802-a2bd-429a-b42d-f119868cf9d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: XusnsCaTGRtJVRHwcWExfgLmRVbYayFUkYwYz0E56rA
+name: 4_3_2400x1800
+label: '4:3 2400x1800'
+effects:
+  2e64a65b-018b-4918-9dd8-ca26385839f1:
+    uuid: 2e64a65b-018b-4918-9dd8-ca26385839f1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2400
+      height: 1800
+      crop_type: focal_point
+pipeline: optimize_image

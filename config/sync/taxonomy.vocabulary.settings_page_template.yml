@@ -1,0 +1,8 @@
+uuid: 214f71c2-dc11-4494-8cb6-f9ab8aa3c417
+langcode: en
+status: true
+dependencies: {  }
+name: 'Settings: Page Template'
+vid: settings_page_template
+description: 'Lets the user select a page template.'
+weight: 0

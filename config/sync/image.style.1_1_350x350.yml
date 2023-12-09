@@ -1,0 +1,10 @@
+uuid: dfa28685-53d6-47b5-8e9f-4df841a16e95
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kQoyKFxonsQur2BtnQ6kcXurFV0U6maTH9nW96VLCfc
+name: 1_1_350x350
+label: '1:1 350x350'
+effects: {  }
+pipeline: optimize_image

@@ -1,0 +1,81 @@
+uuid: 798d82e9-3923-4471-831c-6b6d692c2912
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_featured_image
+    - field.field.node.landing_page.field_summary
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_discovery
+    - manage_display
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          38a0b888-39c9-4bf0-9b91-acfc1300f682:
+            uuid: 38a0b888-39c9-4bf0-9b91-acfc1300f682
+            region: content
+            configuration:
+              id: 'extra_field_block:node:landing_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          5354a126-2798-44ff-aae6-036b7138d4fd:
+            uuid: 5354a126-2798-44ff-aae6-036b7138d4fd
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  link_to_entity: true
+                  tag: h2
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: 3AFWItNE95cp9tykE9mB8kvKUwbflQRqWS_PvTPqWs8
+id: node.landing_page.teaser
+targetEntityType: node
+bundle: landing_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  field_featured_image: true
+  field_summary: true
+  layout_builder__layout: true
+  rad_jumpmenu: true
+  search_api_excerpt: true
+  uid: true

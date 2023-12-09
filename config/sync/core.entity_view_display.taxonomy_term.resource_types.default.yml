@@ -1,0 +1,42 @@
+uuid: 6e654bd6-6deb-4015-8364-1d162fdbc540
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.resource_types.field_icon
+    - taxonomy.vocabulary.resource_types
+  module:
+    - manage_display
+    - text
+id: taxonomy_term.resource_types.default
+targetEntityType: taxonomy_term
+bundle: resource_types
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_icon:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  search_api_excerpt: true

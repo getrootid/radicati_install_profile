@@ -1,0 +1,31 @@
+uuid: a2382d02-ffea-43e1-a854-4b6f6e19fd83
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.16_9_1000x562
+    - image.style.16_9_1500x844
+    - image.style.16_9_2400x1350
+    - image.style.16_9_350x197
+    - image.style.16_9_500x281
+    - image.style.16_9_750x422
+_core:
+  default_config_hash: 6NzvNzpaG8yPcSC2JWWwDCVWlKYV8jcuv-0S9GdEPGk
+id: 16_9_half_width
+label: '16:9 Half Width'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 768px) 50vw, 100vw'
+      sizes_image_styles:
+        - 16_9_1000x562
+        - 16_9_1500x844
+        - 16_9_2400x1350
+        - 16_9_350x197
+        - 16_9_500x281
+        - 16_9_750x422
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: 16_9_350x197

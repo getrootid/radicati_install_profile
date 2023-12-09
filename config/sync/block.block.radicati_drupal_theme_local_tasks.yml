@@ -1,0 +1,22 @@
+uuid: 0babc764-b056-46d4-a876-868ddb436763
+langcode: en
+status: true
+dependencies:
+  theme:
+    - radicati_drupal_theme
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: radicati_drupal_theme_local_tasks
+theme: radicati_drupal_theme
+region: page_title
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

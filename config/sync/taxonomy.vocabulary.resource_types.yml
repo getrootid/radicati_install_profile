@@ -1,0 +1,8 @@
+uuid: 7692964a-50da-4307-8ec3-f591f57ab2cc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Types'
+vid: resource_types
+description: 'Used in the Resource Library. Used to track what kind of thing a resource is. '
+weight: 0

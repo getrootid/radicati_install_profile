@@ -1,0 +1,25 @@
+uuid: 69c0dbd7-d6f7-4f25-b1df-13e67e67a893
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_carousel
+    - field.storage.block_content.field_setting_background
+id: block_content.card_carousel.field_setting_background
+field_name: field_setting_background
+entity_type: block_content
+bundle: card_carousel
+label: Background
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

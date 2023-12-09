@@ -1,0 +1,11 @@
+uuid: 7f0e0a86-74e3-4228-bc56-84adf231d5d0
+langcode: en
+status: true
+dependencies: {  }
+id: logo_grid
+block_id: 'inline_block:logo_grid'
+category: components
+label: 'Logo Grid'
+image_path: ''
+image_alt: ''
+weight: -100

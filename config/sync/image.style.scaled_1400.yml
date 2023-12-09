@@ -1,0 +1,16 @@
+uuid: d5e9b84e-a538-42c4-ab9b-2dcdc73790dc
+langcode: en
+status: true
+dependencies: {  }
+name: scaled_1400
+label: 'Scaled 1400'
+effects:
+  011bedab-2e77-4372-aa90-e42d78b7a3d8:
+    uuid: 011bedab-2e77-4372-aa90-e42d78b7a3d8
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: null
+      upscale: false
+pipeline: optimize_image

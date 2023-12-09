@@ -1,0 +1,19 @@
+uuid: ff6cde4a-03b9-4387-a39a-7b6fdc69a0aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_setting_icon
+    - taxonomy.vocabulary.settings
+id: taxonomy_term.settings.field_setting_icon
+field_name: field_setting_icon
+entity_type: taxonomy_term
+bundle: settings
+label: Icon
+description: 'Uses font awesome icon classes to display icons instead of text.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

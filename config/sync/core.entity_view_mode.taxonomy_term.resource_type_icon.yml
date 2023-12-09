@@ -1,0 +1,10 @@
+uuid: 4e30b996-12a4-4be4-b362-454ddb05dcb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.resource_type_icon
+label: 'Resource Type Icon'
+targetEntityType: taxonomy_term
+cache: true

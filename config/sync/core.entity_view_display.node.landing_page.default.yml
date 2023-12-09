@@ -1,0 +1,55 @@
+uuid: 6ba628b7-de70-408b-a2c8-165510151811
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.field_featured_image
+    - field.field.node.landing_page.field_summary
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - manage_display
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: TewB8TUO4v614uAFJO28s_Ydtzc2F6sQ-nOkUwzygmA
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  field_featured_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: 1_1_half_width
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h3
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  layout_builder__layout: true
+  links: true
+  rad_jumpmenu: true
+  search_api_excerpt: true
+  uid: true

@@ -1,0 +1,20 @@
+uuid: b2e169c0-eecb-41c4-83cd-5718bbccdab0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - taxonomy
+id: block_content.field_setting_content_width
+field_name: field_setting_content_width
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+uuid: 415e0b21-3eeb-4e81-902a-3b181894971b
+langcode: en
+status: true
+dependencies: {  }
+id: icon_stat_grid
+block_id: 'inline_block:icon_stat_grid'
+category: components
+label: 'Icon Stat Grid'
+image_path: ''
+image_alt: ''
+weight: -100

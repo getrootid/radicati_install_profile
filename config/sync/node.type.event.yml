@@ -1,0 +1,26 @@
+uuid: cc3e56f6-9317-4d27-9871-b706a8469479
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_tray:
+    type_category: events
+    type_thumbnail: ''
+    type_icon: /themes/contrib/radicati_drupal_theme/dist/theme-icons/calendar-days-duotone.svg
+    type_description: ''
+    existing_nodes_link_text: 'View Events'
+    type_weight: 0
+name: Event
+type: event
+description: 'An event which can be displayed in a calendar or as part of a time based listing.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

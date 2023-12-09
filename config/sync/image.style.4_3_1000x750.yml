@@ -1,0 +1,20 @@
+uuid: ba9d6451-2c0d-463c-af5a-cf1edc0ee652
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: niehFgrCGyIDbW5o3Q06-7Z3_ZbskOXpB6GzGK9od-M
+name: 4_3_1000x750
+label: '4:3 1000x750'
+effects:
+  8dc28528-97c2-4ba9-a12a-6ea5831db10d:
+    uuid: 8dc28528-97c2-4ba9-a12a-6ea5831db10d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1000
+      height: 750
+      crop_type: focal_point
+pipeline: optimize_image

@@ -1,0 +1,16 @@
+uuid: 6c0d4fce-59fd-437a-8fa0-632f5daddc72
+langcode: en
+status: true
+dependencies: {  }
+name: scaled_600
+label: 'Scaled 600'
+effects:
+  6bdfdf1e-3bd6-48b1-964d-cf745788f857:
+    uuid: 6bdfdf1e-3bd6-48b1-964d-cf745788f857
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false
+pipeline: optimize_image

@@ -1,0 +1,13 @@
+uuid: 63274a81-3638-4fbd-815c-7100ed364d47
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.resource_library
+id: block_content.resource_library.default
+targetEntityType: block_content
+bundle: resource_library
+mode: default
+content: {  }
+hidden:
+  search_api_excerpt: true

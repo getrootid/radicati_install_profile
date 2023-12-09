@@ -1,0 +1,19 @@
+uuid: 125f2cdf-ea95-4692-8969-7dbf2a714fb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.resource
+id: node.resource.field_summary
+field_name: field_summary
+entity_type: node
+bundle: resource
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

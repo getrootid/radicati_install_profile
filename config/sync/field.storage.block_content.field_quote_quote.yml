@@ -1,0 +1,19 @@
+uuid: 8e9b13c7-a691-4b3b-a714-4a5c7c5d8a8d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - text
+id: block_content.field_quote_quote
+field_name: field_quote_quote
+entity_type: block_content
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,37 @@
+uuid: a398b46d-642d-441a-aecb-de901caca074
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.card_collection_item.field_card_blurb
+    - field.field.paragraph.card_collection_item.field_card_link
+    - field.field.paragraph.card_collection_item.field_card_media
+    - field.field.paragraph.card_collection_item.field_card_tag
+    - field.field.paragraph.card_collection_item.field_card_title
+    - paragraphs.paragraphs_type.card_collection_item
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.card_collection_item.preview
+targetEntityType: paragraph
+bundle: card_collection_item
+mode: preview
+content:
+  field_card_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_card_blurb: true
+  field_card_link: true
+  field_card_media: true
+  field_card_tag: true
+  search_api_excerpt: true
