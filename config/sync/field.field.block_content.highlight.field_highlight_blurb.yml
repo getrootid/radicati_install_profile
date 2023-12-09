@@ -1,0 +1,21 @@
+uuid: cc057f08-4f45-40fd-8a46-28e199d4d74d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.highlight
+    - field.storage.block_content.field_highlight_blurb
+  module:
+    - text
+id: block_content.highlight.field_highlight_blurb
+field_name: field_highlight_blurb
+entity_type: block_content
+bundle: highlight
+label: Blurb
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

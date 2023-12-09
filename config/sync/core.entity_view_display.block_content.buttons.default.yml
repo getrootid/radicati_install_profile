@@ -1,0 +1,64 @@
+uuid: 31047a64-39f3-4c36-a13d-1ae6e4025952
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.buttons
+    - field.field.block_content.buttons.field_buttons_buttons
+    - field.field.block_content.buttons.field_component_title
+    - field.field.block_content.buttons.field_setting_alignment
+    - field.field.block_content.buttons.field_setting_background
+    - field.field.block_content.buttons.field_setting_direction
+  module:
+    - link
+    - manage_display
+    - radicati_base
+id: block_content.buttons.default
+targetEntityType: block_content
+bundle: buttons
+mode: default
+content:
+  field_buttons_buttons:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_component_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_setting_alignment:
+    type: rad_tax_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_setting_background:
+    type: rad_tax_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_setting_direction:
+    type: rad_tax_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

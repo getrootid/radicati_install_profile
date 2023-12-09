@@ -1,0 +1,20 @@
+uuid: 831ca6a1-2282-47d7-9f48-02ae651a53a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 2Idjb7N1akTXXyuwVYIitFQi9r2ADeCa2uriX-oYQCM
+name: 1_1_1500x1500
+label: '1:1 1500x1500'
+effects:
+  fc747e4b-322f-4c50-b541-7b55135c98ec:
+    uuid: fc747e4b-322f-4c50-b541-7b55135c98ec
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1500
+      height: 1500
+      crop_type: focal_point
+pipeline: optimize_image

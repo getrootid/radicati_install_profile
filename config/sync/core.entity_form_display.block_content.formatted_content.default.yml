@@ -1,0 +1,48 @@
+uuid: 8273268f-cf78-4c58-ba85-95cb84cebdf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.formatted_content
+    - field.field.block_content.formatted_content.field_component_title
+    - field.field.block_content.formatted_content.field_formatted_content
+    - field.field.block_content.formatted_content.field_setting_background
+  module:
+    - radicati_base
+    - text
+id: block_content.formatted_content.default
+targetEntityType: block_content
+bundle: formatted_content
+mode: default
+content:
+  field_component_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_formatted_content:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_setting_background:
+    type: taxonomy_icon_widget
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

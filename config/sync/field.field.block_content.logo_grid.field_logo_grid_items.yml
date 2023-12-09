@@ -1,0 +1,43 @@
+uuid: 1e14bd33-1de1-454b-aa10-2d2db5229b77
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_grid
+    - field.storage.block_content.field_logo_grid_items
+    - paragraphs.paragraphs_type.logo_grid_item
+  module:
+    - entity_reference_revisions
+id: block_content.logo_grid.field_logo_grid_items
+field_name: field_logo_grid_items
+entity_type: block_content
+bundle: logo_grid
+label: Items
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      logo_grid_item: logo_grid_item
+    negate: 0
+    target_bundles_drag_drop:
+      card_collection_item:
+        weight: 6
+        enabled: false
+      logo_grid_item:
+        weight: 7
+        enabled: true
+      media_item:
+        weight: 8
+        enabled: false
+      statistic_item:
+        weight: 9
+        enabled: false
+      temp:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

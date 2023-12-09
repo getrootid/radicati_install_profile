@@ -1,0 +1,8 @@
+uuid: 0c9f1a73-40dd-4df5-b550-76f732e27b6d
+langcode: en
+status: true
+dependencies: {  }
+id: listing_section
+label: 'Listing Section'
+revision: 0
+description: 'Used to display pre-made lists of content.'

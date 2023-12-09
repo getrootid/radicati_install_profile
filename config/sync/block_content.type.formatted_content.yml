@@ -1,0 +1,8 @@
+uuid: ad8f1267-43c7-41f2-9302-64ffe68a20a5
+langcode: en
+status: true
+dependencies: {  }
+id: formatted_content
+label: 'Formatted Content'
+revision: 1
+description: 'Simple component with a text editor so that the user can created easy to read formatted content.'

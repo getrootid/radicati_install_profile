@@ -1,0 +1,10 @@
+uuid: b7bdac39-2251-42cf-94cb-8ff9e2b7df58
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.detailed_listing
+label: 'Detailed Listing'
+targetEntityType: node
+cache: true

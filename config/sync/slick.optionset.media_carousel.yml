@@ -1,0 +1,43 @@
+uuid: 131e9ded-289d-4d59-8955-71474f0d34e1
+langcode: en
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: R44sHtkxxZrBiHA2kQiOrgfOwXDce6s8fpQCTUoDhf0
+id: media_carousel
+name: media_carousel
+weight: -10
+label: 'Media Carousel'
+group: ''
+skin: default
+breakpoints: 2
+optimized: true
+options:
+  options__active_tab: edit-options-responsives
+  settings:
+    mobileFirst: true
+    arrows: false
+    dots: true
+    infinite: false
+    lazyLoad: ondemand
+    rows: 0
+    slidesToShow: 1
+  responsives:
+    responsive:
+      -
+        breakpoint: 576
+        unslick: false
+        settings:
+          dots: true
+          infinite: false
+          rows: 0
+      -
+        breakpoint: 992
+        unslick: false
+        settings:
+          dots: true
+          infinite: false
+          rows: 0

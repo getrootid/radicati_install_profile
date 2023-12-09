@@ -1,0 +1,34 @@
+uuid: 4eaada47-f746-41f5-98df-4c2824a1dbcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-navigation
+  module:
+    - block_visibility_conditions
+    - system
+  theme:
+    - radicati_drupal_theme
+id: radicati_drupal_theme_secondarynavigation
+theme: radicati_drupal_theme
+region: secondary_navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:secondary-navigation'
+settings:
+  id: 'system_menu_block:secondary-navigation'
+  label: 'Secondary Navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  not_node_type:
+    id: not_node_type
+    bundles: {  }
+    negate: null
+  not_taxonomy_vocabulary:
+    id: not_taxonomy_vocabulary
+    bundles: {  }
+    negate: null

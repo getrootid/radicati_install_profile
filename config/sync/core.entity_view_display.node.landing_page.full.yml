@@ -1,0 +1,101 @@
+uuid: 2e7e7497-4721-4ab9-a062-eb7dc7289b0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.landing_page.field_featured_image
+    - field.field.node.landing_page.field_summary
+    - field.field.node.landing_page.layout_builder__layout
+    - node.type.landing_page
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - manage_display
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          98f2a836-a4fa-4505-ae5e-fe947678bc16:
+            uuid: 98f2a836-a4fa-4505-ae5e-fe947678bc16
+            region: content
+            configuration:
+              id: 'extra_field_block:node:landing_page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          8f3dd973-cb3a-4a0c-9527-aaaabdfe7b85:
+            uuid: 8f3dd973-cb3a-4a0c-9527-aaaabdfe7b85
+            region: content
+            configuration:
+              id: 'field_block:node:landing_page:title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  link_to_entity: true
+                  tag: h2
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts:
+        - rad_single_column
+        - rad_two_column
+        - rad_three_column
+        - rad_four_column
+      denylisted_blocks: {  }
+      allowlisted_blocks:
+        core:
+          - page_title_block
+      restricted_categories:
+        - Devel
+        - Help
+        - Superfish
+        - System
+        - User
+        - radicati
+_core:
+  default_config_hash: TewB8TUO4v614uAFJO28s_Ydtzc2F6sQ-nOkUwzygmA
+id: node.landing_page.full
+targetEntityType: node
+bundle: landing_page
+mode: full
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  field_featured_image: true
+  field_summary: true
+  layout_builder__layout: true
+  rad_jumpmenu: true
+  search_api_excerpt: true
+  uid: true

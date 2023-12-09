@@ -1,0 +1,23 @@
+uuid: d2827a60-4620-4241-8390-5795909441c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.alert
+  module:
+    - text
+id: node.alert.body
+field_name: body
+entity_type: node
+bundle: alert
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

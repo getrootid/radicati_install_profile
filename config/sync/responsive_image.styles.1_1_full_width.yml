@@ -1,0 +1,31 @@
+uuid: 92581d88-45ea-4bd6-8290-3b4710f70716
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.1_1_1000x1000
+    - image.style.1_1_1500x1500
+    - image.style.1_1_2400x2400
+    - image.style.1_1_350x350
+    - image.style.1_1_500x500
+    - image.style.1_1_750x750
+_core:
+  default_config_hash: 2mq8s-DssRfSoI3OXkBtlfqiGcvmoK02LOAD-_hKAsY
+id: 1_1_full_width
+label: '1:1 Full Width'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - 1_1_1000x1000
+        - 1_1_1500x1500
+        - 1_1_2400x2400
+        - 1_1_350x350
+        - 1_1_500x500
+        - 1_1_750x750
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: 1_1_350x350

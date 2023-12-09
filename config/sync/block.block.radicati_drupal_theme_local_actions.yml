@@ -1,0 +1,20 @@
+uuid: de4c272f-7f00-4eef-87a3-1520d8684c40
+langcode: en
+status: true
+dependencies:
+  theme:
+    - radicati_drupal_theme
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: radicati_drupal_theme_local_actions
+theme: radicati_drupal_theme
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

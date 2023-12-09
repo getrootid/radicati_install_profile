@@ -1,0 +1,25 @@
+uuid: 85a3fad0-7043-41fc-af50-9dfac908d151
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.buttons
+    - field.storage.block_content.field_setting_direction
+id: block_content.buttons.field_setting_direction
+field_name: field_setting_direction
+entity_type: block_content
+bundle: buttons
+label: Direction
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_6
+      arguments: {  }
+field_type: entity_reference

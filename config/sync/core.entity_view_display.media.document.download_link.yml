@@ -1,0 +1,41 @@
+uuid: ec326ab0-0521-4838-8987-e955664e5fa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.download_link
+    - field.field.media.document.field_media_document
+    - media.type.document
+  module:
+    - layout_builder
+    - media_entity_download
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: DXitcriWmE5QHvGvk2OzWouaSnXD5uipkRdAG6_pnkg
+id: media.document.download_link
+targetEntityType: media
+bundle: document
+mode: download_link
+content:
+  field_media_document:
+    type: media_entity_download_download_link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+      disposition: attachment
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

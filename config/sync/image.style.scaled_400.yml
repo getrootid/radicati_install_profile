@@ -1,0 +1,16 @@
+uuid: 0a5b41f8-2467-4dbb-a015-11686d9dec48
+langcode: en
+status: true
+dependencies: {  }
+name: scaled_400
+label: 'Scaled 400'
+effects:
+  194c932f-5e40-4390-96ea-e089424bb906:
+    uuid: 194c932f-5e40-4390-96ea-e089424bb906
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false
+pipeline: optimize_image

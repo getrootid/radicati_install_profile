@@ -1,0 +1,16 @@
+uuid: 0275175a-8279-4664-9ce9-8f2393927744
+langcode: en
+status: true
+dependencies: {  }
+name: scaled_1800
+label: 'Scaled 1800'
+effects:
+  219d80e3-9b64-4351-aeb4-97cd555c9129:
+    uuid: 219d80e3-9b64-4351-aeb4-97cd555c9129
+    id: image_scale
+    weight: 1
+    data:
+      width: 1800
+      height: null
+      upscale: false
+pipeline: optimize_image

@@ -1,0 +1,12 @@
+uuid: a2b851bf-ffd7-42b1-b4cf-7fb2420613f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: tfWjJShiF32QOXPFwWp7JtmHl3LqlZu1iG-_Ifj1aNA
+id: media.16_9_half_width
+label: '16:9 Half Width'
+targetEntityType: media
+cache: true

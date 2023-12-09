@@ -1,0 +1,10 @@
+uuid: 866af7a0-7653-42bf-8245-c51e99fb57ec
+langcode: en
+status: true
+dependencies: {  }
+id: card_collection_item
+label: 'Card Collection Item'
+icon_uuid: null
+icon_default: null
+description: 'Meant to be used in the Card Collection Block.'
+behavior_plugins: {  }

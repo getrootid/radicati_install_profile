@@ -1,0 +1,65 @@
+uuid: be6fd6f1-2750-45b7-90fc-6078209b3d1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.listing_section
+    - field.field.block_content.listing_section.field_component_read_more
+    - field.field.block_content.listing_section.field_component_sub_title
+    - field.field.block_content.listing_section.field_component_title
+    - field.field.block_content.listing_section.field_listing_section_view
+  module:
+    - link
+    - manage_display
+    - viewsreference
+id: block_content.listing_section.default
+targetEntityType: block_content
+bundle: listing_section
+mode: default
+content:
+  field_component_read_more:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_component_sub_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h3
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_component_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_listing_section_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        embed: embed
+        default: '0'
+        page: '0'
+        feed: '0'
+        entity_reference: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

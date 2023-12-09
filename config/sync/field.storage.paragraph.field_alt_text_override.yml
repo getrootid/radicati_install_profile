@@ -1,0 +1,21 @@
+uuid: b73323c1-05b1-4a1b-836e-b95803ebec44
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_alt_text_override
+field_name: field_alt_text_override
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: a2bbd3af-e5dd-4fb9-a266-8d2ec0a14d23
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_tray:
+    type_category: pages
+    type_thumbnail: ''
+    type_icon: /themes/contrib/radicati_drupal_theme/dist/theme-icons/table-layout-duotone.svg
+    type_description: 'Something or other!'
+    existing_nodes_link_text: 'View Landing Pages'
+    type_weight: 0
+name: 'Landing Page'
+type: landing_page
+description: 'Pages creating using a component driven layout builder.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,11 @@
+uuid: 1608289e-04d3-4726-ad8d-eb4d3b51f67c
+langcode: en
+status: true
+dependencies: {  }
+id: call_to_action
+block_id: 'inline_block:call_to_action'
+category: components
+label: 'Call to Action'
+image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/bullhorn-duotone.svg
+image_alt: ''
+weight: -3

@@ -1,0 +1,34 @@
+uuid: 71a7c213-9869-4439-ae57-51895a5bdd7f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:buttons:16572a13-2d21-4d10-baa1-3bda301797be'
+  module:
+    - block_content
+    - block_visibility_conditions
+  theme:
+    - radicati_drupal_theme
+id: offcanvasbuttons
+theme: radicati_drupal_theme
+region: off_canvas_footer
+weight: 0
+provider: null
+plugin: 'block_content:16572a13-2d21-4d10-baa1-3bda301797be'
+settings:
+  id: 'block_content:16572a13-2d21-4d10-baa1-3bda301797be'
+  label: 'OffCanvas Buttons'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  not_node_type:
+    id: not_node_type
+    bundles: {  }
+    negate: null
+  not_taxonomy_vocabulary:
+    id: not_taxonomy_vocabulary
+    bundles: {  }
+    negate: null

@@ -1,0 +1,29 @@
+uuid: 191cfff2-d85d-4024-83d6-6adc9347d92a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people_listing
+    - field.storage.block_content.field_setting_alignment
+  content:
+    - 'taxonomy_term:settings:b4835892-194b-40f9-b6d0-558a5e7656c7'
+id: block_content.people_listing.field_setting_alignment
+field_name: field_setting_alignment
+entity_type: block_content
+bundle: people_listing
+label: Alignment
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    target_uuid: b4835892-194b-40f9-b6d0-558a5e7656c7
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

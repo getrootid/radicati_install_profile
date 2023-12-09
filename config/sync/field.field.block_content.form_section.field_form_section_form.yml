@@ -1,0 +1,25 @@
+uuid: 1f13ffef-5b08-4ae5-8fbe-5e7dddd4373c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.form_section
+    - field.storage.block_content.field_form_section_form
+  module:
+    - webform
+id: block_content.form_section.field_form_section_form
+field_name: field_form_section_form
+entity_type: block_content
+bundle: form_section
+label: Form
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

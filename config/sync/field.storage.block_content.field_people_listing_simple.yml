@@ -1,0 +1,20 @@
+uuid: bdc50470-cfef-47ea-9730-dfa3a05c938a
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - node
+id: block_content.field_people_listing_simple
+field_name: field_people_listing_simple
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

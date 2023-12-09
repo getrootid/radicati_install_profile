@@ -1,0 +1,19 @@
+uuid: 62c70a5a-2079-4164-adb4-849e0a373fab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people_listing
+    - field.storage.block_content.field_component_sub_title
+id: block_content.people_listing.field_component_sub_title
+field_name: field_component_sub_title
+entity_type: block_content
+bundle: people_listing
+label: Sub-Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

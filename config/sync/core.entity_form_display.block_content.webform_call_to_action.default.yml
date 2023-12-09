@@ -1,0 +1,89 @@
+uuid: 6becccfb-e779-445b-a968-e68727ce73c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform_call_to_action
+    - field.field.block_content.webform_call_to_action.field_setting_background
+    - field.field.block_content.webform_call_to_action.field_setting_layout
+    - field.field.block_content.webform_call_to_action.field_webform_cta_blurb
+    - field.field.block_content.webform_call_to_action.field_webform_cta_form
+    - field.field.block_content.webform_call_to_action.field_webform_cta_title
+  module:
+    - field_group
+    - radicati_base
+    - text
+    - webform
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_setting_layout
+        - field_setting_background
+      label: Settings
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: block_content.webform_call_to_action.default
+targetEntityType: block_content
+bundle: webform_call_to_action
+mode: default
+content:
+  field_setting_background:
+    type: taxonomy_icon_widget
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_setting_layout:
+    type: taxonomy_icon_widget
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_webform_cta_blurb:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_webform_cta_form:
+    type: webform_entity_reference_select
+    weight: 4
+    region: content
+    settings:
+      default_data: false
+      webforms: {  }
+    third_party_settings: {  }
+  field_webform_cta_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

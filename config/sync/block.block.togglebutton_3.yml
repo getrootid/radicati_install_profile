@@ -1,0 +1,36 @@
+uuid: fee5abbd-1fe1-4b04-852f-e490e5ec8e8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_conditions
+    - radicati_base
+  theme:
+    - radicati_drupal_theme
+id: togglebutton_3
+theme: radicati_drupal_theme
+region: off_canvas_header
+weight: 0
+provider: null
+plugin: rad_button_block
+settings:
+  id: rad_button_block
+  label: ''
+  label_display: visible
+  provider: radicati_base
+  icon_classes: 'far fa-close'
+  icon_classes_active: 'far fa-close'
+  button_id: oc-toggle-button
+  button_label: Menu
+  button_label_display: label-visually-hidden
+  aria_controls: off-canvas
+  handle_click: 0
+visibility:
+  not_node_type:
+    id: not_node_type
+    bundles: {  }
+    negate: null
+  not_taxonomy_vocabulary:
+    id: not_taxonomy_vocabulary
+    bundles: {  }
+    negate: null

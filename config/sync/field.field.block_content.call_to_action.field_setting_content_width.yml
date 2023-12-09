@@ -1,0 +1,25 @@
+uuid: 6f3a3ac4-dc90-47a9-bdbd-93bfdc07e658
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_setting_content_width
+id: block_content.call_to_action.field_setting_content_width
+field_name: field_setting_content_width
+entity_type: block_content
+bundle: call_to_action
+label: 'Content Width'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_4
+      arguments: {  }
+field_type: entity_reference

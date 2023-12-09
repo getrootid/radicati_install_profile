@@ -1,0 +1,20 @@
+uuid: e317e065-bd03-47fd-80cc-9a99a3fd905b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: UCPeDKq-6bdytVBscat9wmJsR8q7jS1ILIiTz2M_16U
+name: 16_9_1000x562
+label: '16:9 1000x562'
+effects:
+  983e2cbc-e6f3-47f1-a06d-80bec5ad8a2f:
+    uuid: 983e2cbc-e6f3-47f1-a06d-80bec5ad8a2f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1000
+      height: 562
+      crop_type: focal_point
+pipeline: optimize_image

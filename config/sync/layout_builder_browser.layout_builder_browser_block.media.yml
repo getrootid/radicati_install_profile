@@ -1,0 +1,11 @@
+uuid: 9280d5a1-becf-415a-ac5c-1338dbcd9c9d
+langcode: en
+status: true
+dependencies: {  }
+id: media
+block_id: 'inline_block:media'
+category: page_content
+label: Media
+image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/photo-film-duotone.svg
+image_alt: Media
+weight: -99

@@ -1,0 +1,20 @@
+uuid: cde984d7-94a4-4d7d-bf09-2efb28e09efe
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: WXqpDNjdHITVwS3JqAK6zLP_BpGI-UED73BREg_Nm7A
+name: 1_1_500x500
+label: '1:1 500x500'
+effects:
+  e3a42c0f-8109-4822-821c-a50df1ff279d:
+    uuid: e3a42c0f-8109-4822-821c-a50df1ff279d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      crop_type: focal_point
+pipeline: optimize_image

@@ -1,0 +1,21 @@
+uuid: f14a9496-f40b-4c0e-af9c-7af49a42d8e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.formatted_content
+    - field.storage.block_content.field_formatted_content
+  module:
+    - text
+id: block_content.formatted_content.field_formatted_content
+field_name: field_formatted_content
+entity_type: block_content
+bundle: formatted_content
+label: 'Formatted Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

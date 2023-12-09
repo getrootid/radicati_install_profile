@@ -1,0 +1,19 @@
+uuid: 4e1f42d6-5925-41ae-a585-149da7cc09fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_highlight_button
+field_name: field_highlight_button
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: 58286e8e-1e71-4872-94e3-b284b13c8798
+langcode: en
+status: true
+dependencies: {  }
+name: Settings
+vid: settings
+description: 'Use by Radicati Components to manage component settings.'
+weight: 0

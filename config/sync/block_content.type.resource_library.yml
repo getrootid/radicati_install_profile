@@ -1,0 +1,8 @@
+uuid: 6c363cc0-c821-4427-93ce-097472356527
+langcode: en
+status: true
+dependencies: {  }
+id: resource_library
+label: 'Resource Library'
+revision: 0
+description: 'The interface for the resource library.'

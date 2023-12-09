@@ -1,0 +1,43 @@
+uuid: 26e73a6c-29c4-4f51-8935-dd92be78d1d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.content_grid
+    - field.storage.block_content.field_content_grid_items
+    - node.type.alert
+    - node.type.event
+    - node.type.landing_page
+    - node.type.news_item
+    - node.type.page
+    - node.type.person
+    - node.type.post
+    - node.type.resource
+id: block_content.content_grid.field_content_grid_items
+field_name: field_content_grid_items
+entity_type: block_content
+bundle: content_grid
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      alert: alert
+      page: page
+      event: event
+      landing_page: landing_page
+      news_item: news_item
+      person: person
+      post: post
+      resource: resource
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: alert
+field_type: entity_reference

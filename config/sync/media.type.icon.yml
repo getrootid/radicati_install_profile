@@ -1,0 +1,14 @@
+uuid: 29fad71b-7d2c-41a1-859e-c69b504a2255
+langcode: en
+status: true
+dependencies: {  }
+id: icon
+label: Icon
+description: 'Use to represent an icon or logo.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

@@ -1,0 +1,11 @@
+uuid: 820730c7-22ee-497e-9dc7-e5602bba2690
+langcode: en
+status: true
+dependencies: {  }
+id: content_grid
+block_id: 'inline_block:content_grid'
+category: components
+label: 'Content Grid'
+image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/cards-duotone.svg
+image_alt: 'Content Grid'
+weight: -100

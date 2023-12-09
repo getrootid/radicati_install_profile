@@ -1,0 +1,23 @@
+uuid: 690fdb0f-0b04-470e-a659-7b9baee78b90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logo_item_link
+    - paragraphs.paragraphs_type.logo_grid_item
+  module:
+    - link
+id: paragraph.logo_grid_item.field_logo_item_link
+field_name: field_logo_item_link
+entity_type: paragraph
+bundle: logo_grid_item
+label: Link
+description: 'Setting this will make the logo a link. If the optional text is set then it will be displayed below the logo.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

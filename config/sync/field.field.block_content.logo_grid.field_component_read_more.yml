@@ -1,0 +1,23 @@
+uuid: 227b4a1d-6ca9-4926-af20-57336ea60a93
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_grid
+    - field.storage.block_content.field_component_read_more
+  module:
+    - link
+id: block_content.logo_grid.field_component_read_more
+field_name: field_component_read_more
+entity_type: block_content
+bundle: logo_grid
+label: 'Read More'
+description: 'An optional read-more button.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

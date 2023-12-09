@@ -1,0 +1,19 @@
+uuid: 5346b216-7389-4d01-861b-af4b56c09273
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.quote
+    - field.storage.block_content.field_quote_citation_title
+id: block_content.quote.field_quote_citation_title
+field_name: field_quote_citation_title
+entity_type: block_content
+bundle: quote
+label: 'Citation Title'
+description: 'An optional title for the person. This could be a job title, or a further descriptor of the person.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

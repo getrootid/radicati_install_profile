@@ -1,0 +1,21 @@
+uuid: 6f5466fd-40f4-42a7-a2fb-4a9c8c3a43c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_cta_blurb
+  module:
+    - text
+id: block_content.call_to_action.field_cta_blurb
+field_name: field_cta_blurb
+entity_type: block_content
+bundle: call_to_action
+label: Blurb
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 7372aec1-a5c7-4105-987f-b8f3d93e3d67
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.large_hero
+    - field.storage.block_content.field_setting_layout
+id: block_content.large_hero.field_setting_layout
+field_name: field_setting_layout
+entity_type: block_content
+bundle: large_hero
+label: Layout
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_3
+      arguments: {  }
+field_type: entity_reference

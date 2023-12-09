@@ -1,0 +1,19 @@
+uuid: d355d73e-23a7-4807-a301-9927a1d8d0e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_grid
+    - field.storage.block_content.field_component_sub_title
+id: block_content.logo_grid.field_component_sub_title
+field_name: field_component_sub_title
+entity_type: block_content
+bundle: logo_grid
+label: Sub-Title
+description: 'Displays under the title and adds additional information or context.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

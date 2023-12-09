@@ -1,0 +1,36 @@
+uuid: 056d48f9-d64c-437c-87bf-4c489f4402b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_featured_image
+    - field.field.node.event.field_summary
+    - node.type.event
+  module:
+    - manage_display
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
+hidden:
+  created: true
+  field_featured_image: true
+  field_summary: true
+  search_api_excerpt: true
+  uid: true

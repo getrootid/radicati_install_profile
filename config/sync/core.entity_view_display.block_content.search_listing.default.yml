@@ -1,0 +1,37 @@
+uuid: 49147c4d-80e8-4b8f-bbe2-ad9dd84f2b3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.search_listing
+    - field.field.block_content.search_listing.field_component_title
+    - field.field.block_content.search_listing.field_setting_background
+  module:
+    - radicati_base
+    - text_field_formatter
+id: block_content.search_listing.default
+targetEntityType: block_content
+bundle: search_listing
+mode: default
+content:
+  field_component_title:
+    type: text_field_formatter
+    label: hidden
+    settings:
+      wrap_tag: h2
+      wrap_class: ''
+      wrap_attributes: ''
+      override_link_label: ''
+      link_to_entity: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_setting_background:
+    type: rad_tax_setting
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

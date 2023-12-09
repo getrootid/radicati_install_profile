@@ -1,0 +1,19 @@
+uuid: e64b5e16-88ed-46a7-99c4-2c9826feaa84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_item__caption
+    - paragraphs.paragraphs_type.media_item
+id: paragraph.media_item.field_media_item__caption
+field_name: field_media_item__caption
+entity_type: paragraph
+bundle: media_item
+label: Caption
+description: 'A caption that is displayed below the image or video.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

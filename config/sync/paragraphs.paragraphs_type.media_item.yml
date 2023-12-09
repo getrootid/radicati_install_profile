@@ -1,0 +1,10 @@
+uuid: 12c8db2f-0c64-4b46-9775-3fb5ed5eb3ea
+langcode: en
+status: true
+dependencies: {  }
+id: media_item
+label: 'Media Item'
+icon_uuid: null
+icon_default: null
+description: 'An enhanced version of the media items used in other components. This has fields for a caption that is always displayed and an alt-text override field.'
+behavior_plugins: {  }

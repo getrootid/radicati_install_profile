@@ -1,0 +1,25 @@
+uuid: 450524b5-b65b-4ff8-8500-a60c141804fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.buttons
+    - field.storage.block_content.field_setting_alignment
+id: block_content.buttons.field_setting_alignment
+field_name: field_setting_alignment
+entity_type: block_content
+bundle: buttons
+label: Alignment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: 91e8aae3-e9a1-49f7-aa36-57d78dbdf9bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.scaled_25_width
+label: 'Scaled 25% Width'
+targetEntityType: media
+cache: true

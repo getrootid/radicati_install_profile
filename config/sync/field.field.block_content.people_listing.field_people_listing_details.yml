@@ -1,0 +1,29 @@
+uuid: 48fb6da2-bb41-4431-98cd-5902b84c4bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people_listing
+    - field.storage.block_content.field_people_listing_details
+    - node.type.person
+id: block_content.people_listing.field_people_listing_details
+field_name: field_people_listing_details
+entity_type: block_content
+bundle: people_listing
+label: 'Details Listing'
+description: 'People in the details listing will have more data output. Typically this will take up the entire horizontal width. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

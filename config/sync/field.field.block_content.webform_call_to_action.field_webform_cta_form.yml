@@ -1,0 +1,25 @@
+uuid: 85068618-8770-4f90-9003-1920a323565f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.webform_call_to_action
+    - field.storage.block_content.field_webform_cta_form
+  module:
+    - webform
+id: block_content.webform_call_to_action.field_webform_cta_form
+field_name: field_webform_cta_form
+entity_type: block_content
+bundle: webform_call_to_action
+label: Form
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

@@ -1,0 +1,72 @@
+uuid: 7e4b98db-2e94-46d0-82ed-b39e0f1f6250
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.simple_listing
+    - field.field.node.person.field_featured_image
+    - field.field.node.person.field_person_email
+    - field.field.node.person.field_person_first_name
+    - field.field.node.person.field_person_full_name
+    - field.field.node.person.field_person_last_name
+    - field.field.node.person.field_person_phone
+    - field.field.node.person.field_person_position
+    - field.field.node.person.field_person_pronouns
+    - field.field.node.person.field_person_website
+    - field.field.node.person.field_summary
+    - node.type.person
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.person.simple_listing
+targetEntityType: node
+bundle: person
+mode: simple_listing
+content:
+  field_person_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_person_last_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_person_position:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_person_pronouns:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  created: true
+  field_featured_image: true
+  field_person_email: true
+  field_person_full_name: true
+  field_person_phone: true
+  field_person_website: true
+  field_summary: true
+  links: true
+  search_api_excerpt: true
+  title: true
+  uid: true

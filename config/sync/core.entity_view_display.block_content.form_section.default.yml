@@ -1,0 +1,59 @@
+uuid: cb10d819-49d1-4e5d-9bca-50fb3b8d2094
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.form_section
+    - field.field.block_content.form_section.field_component_read_more
+    - field.field.block_content.form_section.field_component_title
+    - field.field.block_content.form_section.field_form_section_form
+    - field.field.block_content.form_section.field_setting_alignment
+  module:
+    - link
+    - manage_display
+    - radicati_base
+    - webform
+id: block_content.form_section.default
+targetEntityType: block_content
+bundle: form_section
+mode: default
+content:
+  field_component_read_more:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_component_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_form_section_form:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_setting_alignment:
+    type: rad_tax_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

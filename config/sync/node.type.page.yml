@@ -1,0 +1,26 @@
+uuid: 95d82df7-ac8d-4f01-b4cd-03ad39e94abe
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_tray:
+    type_category: pages
+    type_thumbnail: ''
+    type_icon: /themes/contrib/radicati_drupal_theme/dist/theme-icons/typewriter-duotone.svg
+    type_description: ''
+    existing_nodes_link_text: 'View Basic Pages'
+    type_weight: 0
+name: 'Basic Page'
+type: page
+description: 'A simple page not made with a component driven layout.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

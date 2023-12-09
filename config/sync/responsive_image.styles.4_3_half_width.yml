@@ -1,0 +1,31 @@
+uuid: 5590c7b1-5bc7-4012-8da1-c729088aa70c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.4_3_1000x750
+    - image.style.4_3_1500x1125
+    - image.style.4_3_2400x1800
+    - image.style.4_3_350x262
+    - image.style.4_3_500x375
+    - image.style.4_3_750x562
+_core:
+  default_config_hash: gdCmcJXctqdhNgAmuyHEzE5qoaCE1b-9dp9rv3BpbSs
+id: 4_3_half_width
+label: '4:3 Half Width'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 768px) 50vw, 100vw'
+      sizes_image_styles:
+        - 4_3_1000x750
+        - 4_3_1500x1125
+        - 4_3_2400x1800
+        - 4_3_350x262
+        - 4_3_500x375
+        - 4_3_750x562
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: 4_3_350x262

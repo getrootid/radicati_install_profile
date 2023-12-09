@@ -1,0 +1,28 @@
+uuid: 490432c2-540c-45d4-bb1f-eb4e7dec5af0
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.webform_default
+  module:
+    - file
+    - filter
+    - fontawesome
+    - media
+    - shortcut
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access shortcuts'
+  - 'delete own files'
+  - 'use text format basic_html'
+  - 'use text format webform_default'
+  - 'view media'

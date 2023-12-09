@@ -1,0 +1,19 @@
+uuid: 0baacfcd-d9ba-4118-8628-ebaeafb49fdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.storage.block_content.field_cta_label
+id: block_content.call_to_action.field_cta_label
+field_name: field_cta_label
+entity_type: block_content
+bundle: call_to_action
+label: Label
+description: 'Extra text field for any kind of text data you may want.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

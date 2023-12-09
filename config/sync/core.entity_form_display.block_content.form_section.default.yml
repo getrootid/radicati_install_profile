@@ -1,0 +1,81 @@
+uuid: 9142892a-8349-419f-b097-a16c3c8108fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.form_section
+    - field.field.block_content.form_section.field_component_read_more
+    - field.field.block_content.form_section.field_component_title
+    - field.field.block_content.form_section.field_form_section_form
+    - field.field.block_content.form_section.field_setting_alignment
+  module:
+    - field_group
+    - link
+    - radicati_base
+    - webform
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_setting_alignment
+      label: Settings
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        required_fields: true
+id: block_content.form_section.default
+targetEntityType: block_content
+bundle: form_section
+mode: default
+content:
+  field_component_read_more:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_component_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_form_section_form:
+    type: webform_entity_reference_select
+    weight: 3
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+  field_setting_alignment:
+    type: taxonomy_icon_widget
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

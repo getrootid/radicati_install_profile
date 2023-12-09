@@ -1,0 +1,19 @@
+uuid: 241345a6-2dcf-4b1d-812f-ba69f73a081a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.search_listing
+    - field.storage.block_content.field_component_title
+id: block_content.search_listing.field_component_title
+field_name: field_component_title
+entity_type: block_content
+bundle: search_listing
+label: Title
+description: 'Optional section title.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 1d3da22a-5759-418f-aeaa-c08ca50aa7f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - radicati_drupal_theme
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: radicati_drupal_theme_help
+theme: radicati_drupal_theme
+region: system_help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

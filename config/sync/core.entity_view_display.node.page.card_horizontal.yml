@@ -1,0 +1,51 @@
+uuid: 07ee7b7d-bc69-4925-b173-8389b22ac8d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card_horizontal
+    - field.field.node.page.field_featured_image
+    - field.field.node.page.field_summary
+    - node.type.page
+  module:
+    - layout_builder
+    - manage_display
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.page.card_horizontal
+targetEntityType: node
+bundle: page
+mode: card_horizontal
+content:
+  field_featured_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: 1_1_half_width
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: true
+      tag: h3
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  links: true
+  search_api_excerpt: true
+  uid: true

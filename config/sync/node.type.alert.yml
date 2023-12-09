@@ -1,0 +1,26 @@
+uuid: 5382356f-3bf6-46eb-8c2f-30c557b1b85a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - type_tray
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  type_tray:
+    type_category: news_alerts
+    type_thumbnail: ''
+    type_icon: /themes/contrib/radicati_drupal_theme/dist/theme-icons/triangle-exclamation-duotone.svg
+    type_description: ''
+    existing_nodes_link_text: 'All Alerts'
+    type_weight: 0
+name: Alert
+type: alert
+description: 'Site alerts, normally displayed with some amount of urgency. This can be used to direct site user attention to important time sensitive information. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

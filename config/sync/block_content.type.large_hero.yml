@@ -1,0 +1,8 @@
+uuid: 5ff90190-45fb-401b-863f-36140fd1682c
+langcode: en
+status: true
+dependencies: {  }
+id: large_hero
+label: 'Large Hero'
+revision: 0
+description: ''

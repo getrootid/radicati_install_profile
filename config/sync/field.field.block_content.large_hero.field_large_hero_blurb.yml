@@ -1,0 +1,21 @@
+uuid: 1254994a-8dec-415e-bccc-697f49211b71
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.large_hero
+    - field.storage.block_content.field_large_hero_blurb
+  module:
+    - text
+id: block_content.large_hero.field_large_hero_blurb
+field_name: field_large_hero_blurb
+entity_type: block_content
+bundle: large_hero
+label: Blurb
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

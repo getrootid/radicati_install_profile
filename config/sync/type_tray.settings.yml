@@ -1,0 +1,10 @@
+_core:
+  default_config_hash: c-knKQdQwnCtY9cwzSHofxLIkpZdYUGi13uCGVEFCHc
+categories:
+  pages: Pages
+  events: Events
+  news_alerts: 'News and Alerts'
+  resources: Resources
+  people: People
+fallback_label: Uncategorized
+text_format: plain_text

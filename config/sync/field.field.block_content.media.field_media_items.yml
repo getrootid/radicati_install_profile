@@ -1,0 +1,37 @@
+uuid: c34906b9-9489-4ed7-9e5c-ce7b094bedf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media
+    - field.storage.block_content.field_media_items
+    - paragraphs.paragraphs_type.media_item
+  module:
+    - entity_reference_revisions
+id: block_content.media.field_media_items
+field_name: field_media_items
+entity_type: block_content
+bundle: media
+label: 'Media Items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      media_item: media_item
+    negate: 0
+    target_bundles_drag_drop:
+      card_collection_item:
+        weight: 4
+        enabled: false
+      media_item:
+        weight: 5
+        enabled: true
+      temp:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
