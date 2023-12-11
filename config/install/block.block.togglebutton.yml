@@ -1,8 +1,8 @@
+uuid: 0064efb8-a65c-45a9-a020-b6567679d4d0
 langcode: en
 status: true
 dependencies:
   module:
-    - block_visibility_conditions
     - radicati_base
   theme:
     - radicati_drupal_theme
@@ -24,12 +24,4 @@ settings:
   button_label_display: label-left
   aria_controls: block-searchform
   handle_click: true
-visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
+visibility: {  }

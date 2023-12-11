@@ -1,3 +1,4 @@
+uuid: 7b8a945f-3764-4c94-8c5d-331d1a273e32
 langcode: en
 status: true
 dependencies: {  }
@@ -5,6 +6,6 @@ id: formatted_content
 block_id: 'inline_block:formatted_content'
 category: page_content
 label: 'Formatted Content'
-image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/paragraph-duotone.svg
+image_path: /themes/contrib/radicati_drupal_theme/dist/theme-icons/paragraph-duotone.svg
 image_alt: 'Formatted Content'
 weight: -100

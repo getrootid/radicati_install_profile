@@ -1,10 +1,10 @@
+uuid: fe4eb836-e9f1-4e21-ab19-56fa830fbded
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.main
   module:
-    - block_visibility_conditions
     - system
   theme:
     - radicati_drupal_theme
@@ -22,12 +22,4 @@ settings:
   level: 1
   depth: 0
   expand_all_items: true
-visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
+visibility: {  }

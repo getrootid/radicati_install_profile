@@ -1,8 +1,8 @@
+uuid: 025ef455-7f9a-498a-8860-6370aaeac5c4
 langcode: en
 status: true
 dependencies:
   module:
-    - block_visibility_conditions
     - system
   theme:
     - radicati_drupal_theme
@@ -22,12 +22,4 @@ settings:
   use_site_logo: true
   use_site_name: true
   use_site_slogan: false
-visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
+visibility: {  }

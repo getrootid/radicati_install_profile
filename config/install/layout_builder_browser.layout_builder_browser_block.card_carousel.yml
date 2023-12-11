@@ -1,3 +1,4 @@
+uuid: 0bc6f055-e88a-4e83-a361-f03fbe46fc95
 langcode: en
 status: true
 dependencies: {  }
@@ -5,6 +6,6 @@ id: card_carousel
 block_id: 'inline_block:card_carousel'
 category: components
 label: 'Card Carousel'
-image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/rectangle-vertical-history-duotone.svg
+image_path: /themes/contrib/radicati_drupal_theme/dist/theme-icons/rectangle-vertical-history-duotone.svg
 image_alt: Carousel
 weight: -2

@@ -1,10 +1,10 @@
+uuid: 56b490b1-6dc8-4201-8d4a-4bb2bc770eb9
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.main
   module:
-    - block_visibility_conditions
     - superfish
   theme:
     - radicati_drupal_theme
@@ -68,12 +68,4 @@ settings:
   custom_list_class: ''
   custom_item_class: ''
   custom_link_class: ''
-visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
+visibility: {  }

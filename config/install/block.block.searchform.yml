@@ -1,8 +1,8 @@
+uuid: e7a22edd-c2fe-4574-ae1a-3c33b129d464
 langcode: en
 status: true
 dependencies:
   module:
-    - block_visibility_conditions
     - radicati_base
   theme:
     - radicati_drupal_theme
@@ -18,12 +18,4 @@ settings:
   label_display: '0'
   provider: radicati_base
   action_route: /search
-visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
+visibility: {  }

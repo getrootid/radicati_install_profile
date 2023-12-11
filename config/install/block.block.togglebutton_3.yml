@@ -1,8 +1,8 @@
+uuid: fee5abbd-1fe1-4b04-852f-e490e5ec8e8b
 langcode: en
 status: true
 dependencies:
   module:
-    - block_visibility_conditions
     - radicati_base
   theme:
     - radicati_drupal_theme
@@ -24,12 +24,4 @@ settings:
   button_label_display: label-visually-hidden
   aria_controls: off-canvas
   handle_click: 0
-visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
+visibility: {  }

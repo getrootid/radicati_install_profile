@@ -1,3 +1,4 @@
+uuid: 3d8924c5-5b88-4763-a1d9-ea509af2ad0d
 langcode: en
 status: true
 dependencies: {  }
@@ -5,6 +6,6 @@ id: lage_hero
 block_id: 'inline_block:large_hero'
 category: hero
 label: 'Lage Hero'
-image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/address-card-duotone.svg
+image_path: /themes/contrib/radicati_drupal_theme/dist/theme-icons/address-card-duotone.svg
 image_alt: 'Large Hero'
 weight: -3
