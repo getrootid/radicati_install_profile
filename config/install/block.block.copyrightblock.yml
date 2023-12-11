@@ -1,3 +1,4 @@
+uuid: edd6188b-f007-4075-a3e9-5385133ed911
 langcode: en
 status: true
 dependencies:
@@ -5,7 +6,6 @@ dependencies:
     - 'block_content:basic:af1cb59e-024f-4cf3-92bb-7fa363c843c9'
   module:
     - block_content
-    - block_visibility_conditions
   theme:
     - radicati_drupal_theme
 id: copyrightblock
@@ -22,12 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  not_node_type:
-    id: not_node_type
-    bundles: {  }
-    negate: null
-  not_taxonomy_vocabulary:
-    id: not_taxonomy_vocabulary
-    bundles: {  }
-    negate: null
+visibility: {  }

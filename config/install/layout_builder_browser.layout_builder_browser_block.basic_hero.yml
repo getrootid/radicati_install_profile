@@ -1,3 +1,4 @@
+uuid: 3c759eef-cf5b-484f-ab09-6957c20aeb93
 langcode: en
 status: true
 dependencies: {  }
@@ -5,6 +6,6 @@ id: basic_hero
 block_id: 'inline_block:basic_hero'
 category: hero
 label: 'Basic Hero'
-image_path: /themes/composer/radicati_drupal_theme/dist/theme-icons/address-card-duotone.svg
+image_path: /themes/contrib/radicati_drupal_theme/dist/theme-icons/address-card-duotone.svg
 image_alt: 'Basic Hero'
 weight: -100
