@@ -17,5 +17,6 @@ settings:
   label: 'Search Form'
   label_display: '0'
   provider: radicati_base
+  form_id: site-search-form
   action_route: /search
 visibility: {  }

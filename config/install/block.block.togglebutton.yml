@@ -22,6 +22,6 @@ settings:
   button_id: search-button
   button_label: Search
   button_label_display: label-left
-  aria_controls: block-searchform
-  handle_click: true
+  aria_controls: site-search-form
+  handle_click: 1
 visibility: {  }
