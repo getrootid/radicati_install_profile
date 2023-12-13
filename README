@@ -1,0 +1,4 @@
+When updating the config the following files should be removed:
+
+update.settings.yml
+core.extension.yml

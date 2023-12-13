@@ -115,4 +115,3 @@ install:
   - page_cache
   - big_pipe
   - automated_cron
-  - radicati_default_content
