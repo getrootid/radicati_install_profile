@@ -52,6 +52,15 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
+    type: text
+    boost: 5.0
+    dependencies:
+      module:
+        - node
+  title_1:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
     type: string
     dependencies:
       module:
@@ -75,6 +84,8 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
   language_with_fallback: {  }
   rendered_item: {  }
 tracker_settings:

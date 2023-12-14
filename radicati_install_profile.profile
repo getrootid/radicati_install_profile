@@ -16,6 +16,5 @@ function radicati_install_profile_install_tasks(&$install_state) {
 // This is the task that will be run after the profile installation is complete.
 function radicati_install_profile_install_default_content(&$install_state) {
   // Enable the radicati_default_content module.
-  echo 'here';
   \Drupal::service('module_installer')->install(['radicati_default_content']);
 }
