@@ -1,0 +1,29 @@
+uuid: d529cd6d-c52b-4663-a2aa-621896333ba1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_formatted_content
+    - field.storage.block_content.field_setting_alignment
+  content:
+    - 'taxonomy_term:settings:b4835892-194b-40f9-b6d0-558a5e7656c7'
+id: block_content.media_formatted_content.field_setting_alignment
+field_name: field_setting_alignment
+entity_type: block_content
+bundle: media_formatted_content
+label: Alignment
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: b4835892-194b-40f9-b6d0-558a5e7656c7
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

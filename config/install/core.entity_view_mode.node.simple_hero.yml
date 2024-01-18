@@ -1,0 +1,10 @@
+uuid: 627b13a9-1ec8-415b-a742-f897d1f4fde7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.simple_hero
+label: 'Simple Hero'
+targetEntityType: node
+cache: true

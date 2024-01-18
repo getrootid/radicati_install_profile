@@ -8,4 +8,4 @@ category: components
 label: 'Card Carousel'
 image_path: /themes/contrib/radicati_drupal_theme/dist/theme-icons/rectangle-vertical-history-duotone.svg
 image_alt: Carousel
-weight: -2
+weight: -8

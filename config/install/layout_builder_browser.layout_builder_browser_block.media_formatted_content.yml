@@ -1,0 +1,11 @@
+uuid: 3b485682-5226-4133-a2d9-d563db3d7845
+langcode: en
+status: true
+dependencies: {  }
+id: media_formatted_content
+block_id: 'inline_block:media_formatted_content'
+category: components
+label: 'Media Formatted Content'
+image_path: ''
+image_alt: ''
+weight: -100

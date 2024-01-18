@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card_horizontal
+    - field.field.node.news_item.field_author
     - field.field.node.news_item.field_featured_image
+    - field.field.node.news_item.field_formatted_content
+    - field.field.node.news_item.field_publication_date
     - field.field.node.news_item.field_summary
     - node.type.news_item
   module:
@@ -46,6 +49,9 @@ content:
     region: content
 hidden:
   created: true
+  field_author: true
+  field_formatted_content: true
+  field_publication_date: true
   links: true
   search_api_excerpt: true
   uid: true

@@ -1,0 +1,28 @@
+uuid: 5aa86e1e-cff4-489b-afd2-6aab4e9f2b69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_formatted_content
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - node.type.news_item
+  module:
+    - text
+id: node.news_item.field_formatted_content
+field_name: field_formatted_content
+entity_type: node
+bundle: news_item
+label: 'Formatted Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+    - plain_text
+field_type: text_long

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.field_featured_image
+    - field.field.node.page.field_formatted_content
     - field.field.node.page.field_summary
     - node.type.page
   module:
@@ -31,6 +32,7 @@ content:
 hidden:
   created: true
   field_featured_image: true
+  field_formatted_content: true
   field_summary: true
   search_api_excerpt: true
   uid: true

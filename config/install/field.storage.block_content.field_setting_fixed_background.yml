@@ -1,16 +1,14 @@
-uuid: b2e169c0-eecb-41c4-83cd-5718bbccdab0
+uuid: 26f01aa6-f472-4422-9dd5-0977c5a865c9
 langcode: en
 status: true
 dependencies:
   module:
     - block_content
-    - taxonomy
-id: block_content.field_setting_content_width
-field_name: field_setting_content_width
+id: block_content.field_setting_fixed_background
+field_name: field_setting_fixed_background
 entity_type: block_content
-type: entity_reference
-settings:
-  target_type: taxonomy_term
+type: boolean
+settings: {  }
 module: core
 locked: false
 cardinality: 1

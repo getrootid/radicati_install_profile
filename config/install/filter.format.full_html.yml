@@ -2,9 +2,17 @@ uuid: 7f1a0abd-ba38-47e4-9e7f-32cf4a1da9c7
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.16_9_full_width
+    - core.entity_view_mode.media.16_9_half_width
+    - core.entity_view_mode.media.1_1_full_width
+    - core.entity_view_mode.media.1_1_half_width
+    - core.entity_view_mode.media.4_3_full_width
+    - core.entity_view_mode.media.4_3_half_width
   module:
     - blazy
     - editor
+    - media
     - slick
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
@@ -107,6 +115,24 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: ''
+      allowed_html: '<a class="button button--primary button--secondary"> <section class="rad-call-to-action rad-call-to-action--primary rad-call-to-action--secondary">'
       filter_html_help: true
       filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: 4_3_half_width
+      allowed_view_modes:
+        16_9_full_width: 16_9_full_width
+        16_9_half_width: 16_9_half_width
+        1_1_full_width: 1_1_full_width
+        1_1_half_width: 1_1_half_width
+        4_3_full_width: 4_3_full_width
+        4_3_half_width: 4_3_half_width
+      allowed_media_types:
+        image: image
+        remote_video: remote_video
+        video: video

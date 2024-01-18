@@ -8,4 +8,4 @@ category: components
 label: 'Content Grid'
 image_path: /themes/contrib/radicati_drupal_theme/dist/theme-icons/cards-duotone.svg
 image_alt: 'Content Grid'
-weight: -100
+weight: -5

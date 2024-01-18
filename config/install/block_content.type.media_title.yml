@@ -1,0 +1,8 @@
+uuid: a26fcd51-7722-4299-b004-1d2625474fad
+langcode: en
+status: true
+dependencies: {  }
+id: media_title
+label: 'Media Title'
+revision: 0
+description: 'A title block with a large media background. '

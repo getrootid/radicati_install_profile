@@ -5,15 +5,76 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.page.field_featured_image
+    - field.field.node.page.field_formatted_content
     - field.field.node.page.field_summary
     - node.type.page
   module:
+    - ctools
     - layout_builder
     - manage_display
+    - radicati_layouts
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: rad_single_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--full
+          layout_inner_width: layout-inner-width--full
+          layout_background: setting-background--none
+          has_grid_gaps: 1
+        components:
+          eb31d66b-23e9-4c6b-a022-2f399c973a41:
+            uuid: eb31d66b-23e9-4c6b-a022-2f399c973a41
+            region: one
+            configuration:
+              id: 'entity_view:node'
+              label: 'Simple Hero (Content)'
+              label_display: '0'
+              provider: ctools
+              view_mode: simple_hero
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: rad_single_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--normal
+          layout_inner_width: layout-inner-width--normal
+          layout_background: setting-background--none
+          has_grid_gaps: 1
+        components:
+          4fc8d7ec-52fd-459d-bc61-84f07c0807bf:
+            uuid: 4fc8d7ec-52fd-459d-bc61-84f07c0807bf
+            region: one
+            configuration:
+              id: 'field_block:node:page:field_formatted_content'
+              label: 'Formatted Content'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.page.full
 targetEntityType: node
 bundle: page
@@ -50,5 +111,6 @@ content:
     region: content
 hidden:
   created: true
+  field_formatted_content: true
   search_api_excerpt: true
   uid: true

@@ -3,16 +3,29 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.post.field_author
     - field.field.node.post.field_featured_image
+    - field.field.node.post.field_formatted_content
+    - field.field.node.post.field_publication_date
     - field.field.node.post.field_summary
     - node.type.post
   module:
+    - datetime
     - manage_display
+    - text
 id: node.post.default
 targetEntityType: node
 bundle: post
 mode: default
 content:
+  field_author:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
   field_featured_image:
     type: entity_reference_entity_view
     label: hidden
@@ -21,6 +34,22 @@ content:
       link: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_formatted_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_summary:
     type: basic_string

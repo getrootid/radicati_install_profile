@@ -1,0 +1,24 @@
+uuid: 93344d97-520d-46b5-80b7-e46fd39602f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_title
+    - field.storage.block_content.field_media_title_title
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.media_title.field_media_title_title
+field_name: field_media_title_title
+entity_type: block_content
+bundle: media_title
+label: Title
+description: 'This will output as a H2 element so no heading element should be inserted in the editor. Generally, only basic text styles should be used here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long
