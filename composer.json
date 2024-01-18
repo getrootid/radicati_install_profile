@@ -37,19 +37,6 @@
     {
       "type": "package",
       "package": {
-        "name": "yowainwright/stickybits",
-        "version": "3.7.9",
-        "type": "drupal-library",
-        "source": {
-          "url": "https://github.com/yowainwright/stickybits",
-          "type": "git",
-          "reference": "3.7.9"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
         "name": "itsjavi/fontawesome-iconpicker",
         "version": "master",
         "type": "drupal-library",
@@ -125,7 +112,6 @@
     "getrootid/radicati_drupal_theme": "dev-main",
     "getrootid/radicati_sitenotice": "dev-main",
     "getrootid/radicati_social": "dev-main",
-    "itsjavi/fontawesome-iconpicker": "master",
-    "yowainwright/stickybits": "^3.7"
+    "itsjavi/fontawesome-iconpicker": "master"
   }
 }
