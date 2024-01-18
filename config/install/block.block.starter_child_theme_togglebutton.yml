@@ -1,0 +1,27 @@
+uuid: 5014f4b0-dd5e-4549-8bde-4e436a83aaa1
+langcode: en
+status: true
+dependencies:
+  module:
+    - radicati_base
+  theme:
+    - starter_child_theme
+id: starter_child_theme_togglebutton
+theme: starter_child_theme
+region: primary_navigation
+weight: -6
+provider: null
+plugin: rad_button_block
+settings:
+  id: rad_button_block
+  label: 'Search Button'
+  label_display: '0'
+  provider: radicati_base
+  icon_classes: 'fa-solid fa-magnifying-glass fa-fw'
+  icon_classes_active: 'fa-solid fa-close fa-fw'
+  button_id: search-button
+  button_label: Search
+  button_label_display: label-left
+  aria_controls: site-search-form
+  handle_click: 1
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 204dff8f-5ead-40fd-a9ae-a189f913e9aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_title
+    - field.storage.block_content.field_setting_background
+  content:
+    - 'taxonomy_term:settings:219115f2-00de-414a-b80c-251c80d18b23'
+id: block_content.media_title.field_setting_background
+field_name: field_setting_background
+entity_type: block_content
+bundle: media_title
+label: Background
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 219115f2-00de-414a-b80c-251c80d18b23
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: radicati_settings_views
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

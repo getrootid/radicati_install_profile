@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_featured_image
+    - field.field.node.event.field_formatted_content
     - field.field.node.event.field_summary
     - node.type.event
   module:
@@ -30,7 +32,9 @@ content:
     region: content
 hidden:
   created: true
+  field_event_date: true
   field_featured_image: true
+  field_formatted_content: true
   field_summary: true
   search_api_excerpt: true
   uid: true

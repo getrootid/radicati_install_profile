@@ -1,0 +1,76 @@
+uuid: 3f37d38f-4c24-4447-928b-078c50fdf9e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.call_to_action
+    - field.field.block_content.call_to_action.field_cta_blurb
+    - field.field.block_content.call_to_action.field_cta_button
+    - field.field.block_content.call_to_action.field_cta_label
+    - field.field.block_content.call_to_action.field_cta_media
+    - field.field.block_content.call_to_action.field_cta_title
+    - field.field.block_content.call_to_action.field_setting_alignment
+  module:
+    - link
+    - manage_display
+    - radicati_base
+    - text
+id: block_content.call_to_action.default
+targetEntityType: block_content
+bundle: call_to_action
+mode: default
+content:
+  field_cta_blurb:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cta_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cta_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cta_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: 16_9_full_width
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cta_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_setting_alignment:
+    type: rad_tax_setting
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  search_api_excerpt: true

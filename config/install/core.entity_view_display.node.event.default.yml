@@ -3,16 +3,29 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_featured_image
+    - field.field.node.event.field_formatted_content
     - field.field.node.event.field_summary
     - node.type.event
   module:
+    - datetime
     - manage_display
+    - text
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
 content:
+  field_event_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 104
+    region: content
   field_featured_image:
     type: entity_reference_entity_view
     label: hidden
@@ -21,6 +34,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_formatted_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_summary:
     type: basic_string

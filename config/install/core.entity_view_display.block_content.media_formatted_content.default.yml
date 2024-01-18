@@ -1,0 +1,58 @@
+uuid: 5ae727a3-ec6f-450d-9e66-e63bafb45ccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_formatted_content
+    - field.field.block_content.media_formatted_content.field_component_background_media
+    - field.field.block_content.media_formatted_content.field_formatted_content
+    - field.field.block_content.media_formatted_content.field_setting_alignment
+    - field.field.block_content.media_formatted_content.field_setting_background
+    - field.field.block_content.media_formatted_content.field_setting_fixed_background
+  module:
+    - radicati_base
+    - text
+id: block_content.media_formatted_content.default
+targetEntityType: block_content
+bundle: media_formatted_content
+mode: default
+content:
+  field_component_background_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: 4_3_full_width
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_formatted_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_setting_alignment:
+    type: rad_tax_setting
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_setting_background:
+    type: rad_tax_setting
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_setting_fixed_background:
+    type: rad_boolean_setting
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  search_api_excerpt: true

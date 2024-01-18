@@ -10,8 +10,6 @@ dependencies:
     - field.field.block_content.call_to_action.field_cta_media
     - field.field.block_content.call_to_action.field_cta_title
     - field.field.block_content.call_to_action.field_setting_alignment
-    - field.field.block_content.call_to_action.field_setting_background
-    - field.field.block_content.call_to_action.field_setting_content_width
   module:
     - field_group
     - link
@@ -90,18 +88,6 @@ content:
   field_setting_alignment:
     type: taxonomy_icon_widget
     weight: 27
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_setting_background:
-    type: taxonomy_icon_widget
-    weight: 28
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_setting_content_width:
-    type: taxonomy_icon_widget
-    weight: 26
     region: content
     settings: {  }
     third_party_settings: {  }

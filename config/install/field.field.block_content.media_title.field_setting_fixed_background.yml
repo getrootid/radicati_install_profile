@@ -1,0 +1,21 @@
+uuid: 23fd9008-a912-45ba-b68a-575719c59663
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_title
+    - field.storage.block_content.field_setting_fixed_background
+id: block_content.media_title.field_setting_fixed_background
+field_name: field_setting_fixed_background
+entity_type: block_content
+bundle: media_title
+label: 'Fixed Background'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

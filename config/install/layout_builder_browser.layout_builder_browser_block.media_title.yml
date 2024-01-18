@@ -1,0 +1,11 @@
+uuid: fc78d7d5-1b81-4231-92de-29a206de0ea3
+langcode: en
+status: true
+dependencies: {  }
+id: media_title
+block_id: 'inline_block:media_title'
+category: components
+label: 'Media Title'
+image_path: ''
+image_alt: ''
+weight: -100

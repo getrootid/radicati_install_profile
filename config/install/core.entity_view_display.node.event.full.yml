@@ -4,16 +4,100 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_featured_image
+    - field.field.node.event.field_formatted_content
     - field.field.node.event.field_summary
     - node.type.event
   module:
+    - ctools
     - layout_builder
     - manage_display
+    - radicati_layouts
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: rad_single_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--full
+          layout_inner_width: layout-inner-width--full
+          layout_background: setting-background--dark
+          has_grid_gaps: 1
+        components:
+          a911e86c-2c74-457e-aba7-142a195468e6:
+            uuid: a911e86c-2c74-457e-aba7-142a195468e6
+            region: one
+            configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Content)'
+              label_display: '0'
+              provider: ctools
+              view_mode: simple_hero
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: rad_two_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--normal
+          layout_inner_width: layout-inner-width--normal
+          layout_background: setting-background--none
+          has_grid_gaps: 1
+          is_full_width: false
+          layout_type: left_sidebar
+        components:
+          55d9beca-b395-4bd0-8fe1-03e2fa77af5d:
+            uuid: 55d9beca-b395-4bd0-8fe1-03e2fa77af5d
+            region: one
+            configuration:
+              id: 'field_block:node:event:field_event_date'
+              label: 'Event Date/Time'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: long
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9f250815-d3b7-437f-9235-dacff67ce855:
+            uuid: 9f250815-d3b7-437f-9235-dacff67ce855
+            region: two
+            configuration:
+              id: 'field_block:node:event:field_formatted_content'
+              label: 'Event Information'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.event.full
 targetEntityType: node
 bundle: event
@@ -50,5 +134,7 @@ content:
     region: content
 hidden:
   created: true
+  field_event_date: true
+  field_formatted_content: true
   search_api_excerpt: true
   uid: true

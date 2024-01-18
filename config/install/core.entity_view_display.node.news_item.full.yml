@@ -4,16 +4,121 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.news_item.field_author
     - field.field.node.news_item.field_featured_image
+    - field.field.node.news_item.field_formatted_content
+    - field.field.node.news_item.field_publication_date
     - field.field.node.news_item.field_summary
     - node.type.news_item
   module:
+    - ctools
     - layout_builder
     - manage_display
+    - radicati_layouts
+    - text
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: rad_single_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--full
+          layout_inner_width: layout-inner-width--full
+          layout_background: setting-background--dark
+          has_grid_gaps: 1
+        components:
+          f937f139-4965-4c79-b57d-0ff72cf512b6:
+            uuid: f937f139-4965-4c79-b57d-0ff72cf512b6
+            region: one
+            configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Content)'
+              label_display: '0'
+              provider: ctools
+              view_mode: simple_hero
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: rad_two_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--normal
+          layout_inner_width: layout-inner-width--normal
+          layout_background: ''
+          has_grid_gaps: 1
+          is_full_width: false
+          layout_type: left_sidebar
+        components:
+          10876b99-950c-42b9-9d03-404847052170:
+            uuid: 10876b99-950c-42b9-9d03-404847052170
+            region: one
+            configuration:
+              id: 'field_block:node:news_item:field_publication_date'
+              label: 'Publication Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: long
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b3e1520f-578d-43f7-a5f8-1e6eb0819e14:
+            uuid: b3e1520f-578d-43f7-a5f8-1e6eb0819e14
+            region: one
+            configuration:
+              id: 'field_block:node:news_item:field_author'
+              label: Author
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: simple_listing
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          bb6f9993-851e-4f41-bdd8-719b4edb0126:
+            uuid: bb6f9993-851e-4f41-bdd8-719b4edb0126
+            region: two
+            configuration:
+              id: 'field_block:node:news_item:field_formatted_content'
+              label: 'Formatted Content'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.news_item.full
 targetEntityType: node
 bundle: news_item
@@ -26,6 +131,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_formatted_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_summary:
     type: basic_string
@@ -50,5 +162,6 @@ content:
     region: content
 hidden:
   created: true
+  field_publication_date: true
   search_api_excerpt: true
   uid: true

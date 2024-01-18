@@ -1,0 +1,26 @@
+uuid: d47f6228-6146-4efd-9eb6-0744c5fbb533
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.media_formatted_content
+    - field.storage.block_content.field_formatted_content
+    - filter.format.basic_html
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.media_formatted_content.field_formatted_content
+field_name: field_formatted_content
+entity_type: block_content
+bundle: media_formatted_content
+label: 'Formatted Content'
+description: 'Can be any formatted content.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

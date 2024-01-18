@@ -4,21 +4,136 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
+    - field.field.node.post.field_author
     - field.field.node.post.field_featured_image
+    - field.field.node.post.field_formatted_content
+    - field.field.node.post.field_publication_date
     - field.field.node.post.field_summary
     - node.type.post
   module:
+    - ctools
+    - datetime
     - layout_builder
     - manage_display
+    - radicati_layouts
+    - text
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: rad_single_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--full
+          layout_inner_width: layout-inner-width--full
+          layout_background: setting-background--dark
+          has_grid_gaps: 1
+        components:
+          ee97366b-66d4-4d18-ab93-8a697f6a5b50:
+            uuid: ee97366b-66d4-4d18-ab93-8a697f6a5b50
+            region: one
+            configuration:
+              id: 'entity_view:node'
+              label: 'Entity view (Content)'
+              label_display: '0'
+              provider: ctools
+              view_mode: simple_hero
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: rad_two_column
+        layout_settings:
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--normal
+          layout_inner_width: layout-inner-width--normal
+          layout_background: setting-background--none
+          has_grid_gaps: 1
+          is_full_width: false
+          layout_type: left_sidebar
+        components:
+          0ce67a96-4226-4c01-994b-7717b1d10b01:
+            uuid: 0ce67a96-4226-4c01-994b-7717b1d10b01
+            region: one
+            configuration:
+              id: 'field_block:node:post:field_author'
+              label: Author
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: simple_listing
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          0d701823-fd63-4a8f-b66e-2a429e316288:
+            uuid: 0d701823-fd63-4a8f-b66e-2a429e316288
+            region: one
+            configuration:
+              id: 'field_block:node:post:field_publication_date'
+              label: 'Publication Date'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: long
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8886f29d-9e32-4c85-a71e-a344ac42e1d1:
+            uuid: 8886f29d-9e32-4c85-a71e-a344ac42e1d1
+            region: two
+            configuration:
+              id: 'field_block:node:post:field_formatted_content'
+              label: 'Formatted Content'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.post.full
 targetEntityType: node
 bundle: post
 mode: full
 content:
+  field_author:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: simple_listing
+      link: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
   field_featured_image:
     type: entity_reference_label
     label: above
@@ -26,6 +141,22 @@ content:
       link: true
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_formatted_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_publication_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 103
     region: content
   field_summary:
     type: basic_string

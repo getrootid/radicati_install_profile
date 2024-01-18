@@ -48,3 +48,6 @@ cloneable_entities:
   - entity_form_mode
   - entity_view_mode
   - date_format
+  - embed_button
+  - entity_embed_fake_entity
+  - embedded_paragraphs

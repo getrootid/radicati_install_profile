@@ -1,0 +1,22 @@
+uuid: 9171d25f-2115-4e18-8154-e12d6e32fac3
+langcode: en
+status: true
+dependencies:
+  module:
+    - radicati_base
+  theme:
+    - starter_child_theme
+id: starter_child_theme_searchform
+theme: starter_child_theme
+region: primary_navigation
+weight: -5
+provider: null
+plugin: rad_search_block
+settings:
+  id: rad_search_block
+  label: 'Search Form'
+  label_display: '0'
+  provider: radicati_base
+  form_id: site-search-form
+  action_route: /search
+visibility: {  }

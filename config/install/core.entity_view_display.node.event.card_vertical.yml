@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card_vertical
+    - field.field.node.event.field_event_date
     - field.field.node.event.field_featured_image
+    - field.field.node.event.field_formatted_content
     - field.field.node.event.field_summary
     - node.type.event
   module:
@@ -46,6 +48,8 @@ content:
     region: content
 hidden:
   created: true
+  field_event_date: true
+  field_formatted_content: true
   links: true
   search_api_excerpt: true
   uid: true

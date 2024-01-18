@@ -1,0 +1,8 @@
+uuid: 002e7ec1-cf0c-4c6b-a6b3-b0d505c04859
+langcode: en
+status: true
+dependencies: {  }
+id: media_formatted_content
+label: 'Media Formatted Content'
+revision: 0
+description: 'A large formatted content block with a media background.'
