@@ -126,6 +126,6 @@
     "getrootid/radicati_sitenotice": "dev-main",
     "getrootid/radicati_social": "dev-main",
     "itsjavi/fontawesome-iconpicker": "master",
-    "yowainwright/stickybits": "~3.7"
+    "yowainwright/stickybits": "^3.7"
   }
 }
