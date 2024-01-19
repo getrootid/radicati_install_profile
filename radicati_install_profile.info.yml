@@ -8,6 +8,9 @@ themes:
   - radicati_drupal_theme
 
 install:
+  - radicati_layouts
+  - radicati_base
+  - radicati_editor_plugins
   - ctools
   - history
   - block
