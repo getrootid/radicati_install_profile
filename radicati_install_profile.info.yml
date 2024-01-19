@@ -8,7 +8,6 @@ themes:
   - radicati_drupal_theme
 
 install:
-  - devel
   - history
   - block
   - block_content
