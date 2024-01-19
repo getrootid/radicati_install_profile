@@ -9,3 +9,4 @@ sed -i '/uuid/d' system.site.yml
 rm core.extension.yml
 rm update.settings.yml
 rm editor.editor.ck5.yml
+rm *starter_child_theme*
