@@ -1,0 +1,74 @@
+uuid: 94bfb532-93b4-4ea1-90a4-f3b6381eda31
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.card_carousel
+    - field.field.block_content.card_carousel.field_carousel_cards
+    - field.field.block_content.card_carousel.field_component_read_more
+    - field.field.block_content.card_carousel.field_component_title
+    - field.field.block_content.card_carousel.field_setting_background
+  module:
+    - link
+    - manage_display
+    - radicati_base
+    - slick_entityreference
+id: block_content.card_carousel.default
+targetEntityType: block_content
+bundle: card_carousel
+mode: default
+content:
+  field_carousel_cards:
+    type: slick_entityreference_vanilla
+    label: hidden
+    settings:
+      optionset: card_slider
+      view_mode: default
+      cache: 0
+      use_theme_field: false
+      skin: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_component_read_more:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_component_title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_setting_background:
+    type: rad_tax_setting
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true
