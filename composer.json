@@ -116,6 +116,7 @@
     "getrootid/radicati_layouts": "dev-main",
     "getrootid/radicati_sitenotice": "dev-main",
     "getrootid/radicati_social": "dev-main",
-    "itsjavi/fontawesome-iconpicker": "master"
+    "itsjavi/fontawesome-iconpicker": "master",
+    "tinify/tinify": "~1"
   }
 }
