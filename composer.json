@@ -109,7 +109,11 @@
     "drupal/viewsreference": "~2.0@beta",
     "drupal/warmer": "~2.0",
     "drupal/webform": "~6.1",
+    "getrootid/radicati_base": "dev-main",
+    "getrootid/radicati_default_content": "dev-main",
+    "getrootid/radicati_content_editor_plugins": "dev-main",
     "getrootid/radicati_drupal_theme": "dev-main",
+    "getrootid/radicati_layouts": "dev-main",
     "getrootid/radicati_sitenotice": "dev-main",
     "getrootid/radicati_social": "dev-main",
     "itsjavi/fontawesome-iconpicker": "master"
