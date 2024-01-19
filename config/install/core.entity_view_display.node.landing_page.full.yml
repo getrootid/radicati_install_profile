@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.large_hero
     - core.entity_view_mode.node.full
     - field.field.node.landing_page.field_featured_image
     - field.field.node.landing_page.field_summary
@@ -11,44 +12,38 @@ dependencies:
   module:
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
     - manage_display
+    - radicati_layouts
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: rad_single_column
         layout_settings:
-          label: ''
+          label: null
+          context_mapping: {  }
+          layout_id: ''
+          layout_classes: ''
+          layout_width: layout-width--full
+          layout_inner_width: layout-inner-width--full
+          layout_background: setting-background--none
+          has_grid_gaps: 1
         components:
-          98f2a836-a4fa-4505-ae5e-fe947678bc16:
-            uuid: 98f2a836-a4fa-4505-ae5e-fe947678bc16
-            region: content
+          667ae100-bc92-42bb-918a-7b6784743707:
+            uuid: 667ae100-bc92-42bb-918a-7b6784743707
+            region: one
             configuration:
-              id: 'extra_field_block:node:landing_page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
+              id: 'inline_block:large_hero'
+              label: 'Inline block'
+              label_display: ''
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 128
+              block_serialized: null
             weight: 0
-            additional: {  }
-          8f3dd973-cb3a-4a0c-9527-aaaabdfe7b85:
-            uuid: 8f3dd973-cb3a-4a0c-9527-aaaabdfe7b85
-            region: content
-            configuration:
-              id: 'field_block:node:landing_page:title'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: title
-                label: hidden
-                settings:
-                  link_to_entity: true
-                  tag: h2
-                third_party_settings: {  }
-            weight: 1
             additional: {  }
         third_party_settings: {  }
   layout_builder_restrictions:

@@ -33,7 +33,7 @@ content:
     type: title
     label: hidden
     settings:
-      link_to_entity: true
+      link_to_entity: false
       tag: h1
     third_party_settings: {  }
     weight: 0
