@@ -48,7 +48,8 @@
       }
     }
   ],
-  "require-dev": {
+  "require": {
+    "tinify/tinify": "~1",
     "drupal/admin_toolbar": "~3",
     "drupal/advagg": "~6",
     "drupal/blazy": "~2",
@@ -116,7 +117,6 @@
     "getrootid/radicati_layouts": "dev-main",
     "getrootid/radicati_sitenotice": "dev-main",
     "getrootid/radicati_social": "dev-main",
-    "itsjavi/fontawesome-iconpicker": "master",
-    "tinify/tinify": "~1"
+    "itsjavi/fontawesome-iconpicker": "master"
   }
 }
